@@ -23,12 +23,23 @@ a {
 
 .main-wrapper {
     max-width: 576px;
+    min-height: 100%;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: cadetblue;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: coral;
 }
 
 .header__logo {
     width: 43%;
-    margin: 0 28.5%;
+    margin: 0 28%;
     padding-bottom: 18px;
 }
 
@@ -77,7 +88,10 @@ a {
 .btn {
     width: 58.45%;
     border-radius: 5em;
+    border: 1px solid #FF79DA;
     padding: 1.1em;
+    background-color: #FF79DA;
+    color: white;
 }
 
 .btn__text {
