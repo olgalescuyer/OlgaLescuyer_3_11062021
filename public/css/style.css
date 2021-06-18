@@ -1,22 +1,86 @@
-li {
-  list-style: none;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
+/*# sourceMappingURL=style.css.map */
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body,
 button {
-  font-family: "Roboto", sans-serif;
-  background-color: white;
-  font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    font-size: 1em;
 }
 
-/*# sourceMappingURL=style.css.map */
+li {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.main-wrapper {
+    max-width: 576px;
+    padding: 20px;
+}
+
+.header__logo {
+    width: 43%;
+    margin: 0 28.5%;
+    padding-bottom: 18px;
+}
+
+.geo__text {
+    display: block;
+    text-align: center;
+    padding: 17px 80px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: rgb(87, 85, 85);
+    margin: 0;
+}
+
+.fa-map-marker-alt {
+    color: black;
+    padding-right: 1.1em;
+}
+
+.search__title {
+    margin: 0;
+}
+
+.search__box-title {
+    margin: 0;
+}
+
+.titre,
+.text {
+    margin: 0;
+}
+
+.titre {
+    padding: 0 24px;
+    text-align: center;
+}
+
+.text {
+    text-align: center;
+}
+
+.form-btn {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    width: 58.45%;
+    border-radius: 5em;
+    padding: 1.1em;
+}
+
+.btn__text {
+    margin: 0;
+    font-size: .8em;
+}
