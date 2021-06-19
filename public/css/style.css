@@ -47,6 +47,14 @@ a {
     padding-bottom: 18px;
 }
 
+.search {
+    background-color: #f6f6f6;
+}
+
+.geo {
+    background-color: #eaeaea;
+}
+
 .geo__text {
     display: block;
     text-align: center;
@@ -144,7 +152,7 @@ img {
 
 .container-footer {
     max-width: 575px;
-    background-color: #f6f6f6;
+    background-color: #353535;
 }
 
 .logo-footer {
