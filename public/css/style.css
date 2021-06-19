@@ -21,12 +21,17 @@ a {
     color: black;
 }
 
+.link-block {
+    display: block;
+}
+
 .main-wrapper {
     max-width: 576px;
     min-height: 100%;
     padding: 20px;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     background-color: cadetblue;
 }
 
@@ -97,4 +102,34 @@ a {
 .btn__text {
     margin: 0;
     font-size: .8em;
+}
+
+.content__image-1 {
+    background: url("../img/restaurants/la-palette-du-gout.jpg") no-repeat;
+    background-size: cover;
+}
+
+.content__image-2 {
+    background: url("../img/restaurants/la-note-enchantee.jpg") no-repeat;
+    background-size: cover;
+}
+
+.content__image-3 {
+    background: url("../img/restaurants/a-la-francaise.jpg") no-repeat;
+    background-size: cover;
+}
+
+.content__image-4 {
+    background: url("../img/restaurants/le-delice-des-sens.jpg") no-repeat;
+    background-size: cover;
+}
+
+.text-image {
+    background-color: white;
+    margin-top: 55%;
+}
+
+.image {
+    border: 4px solid white;
+    border-radius: 10px;
 }
