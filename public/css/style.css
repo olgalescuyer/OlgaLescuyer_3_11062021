@@ -45,6 +45,7 @@ a {
     width: 43%;
     margin: 0 28%;
     padding-bottom: 18px;
+    background-color: hotpink;
 }
 
 .search {
@@ -83,7 +84,7 @@ a {
     margin: 0;
 }
 
-.titre {
+.title {
     padding: 0 24px;
     text-align: center;
 }
@@ -92,7 +93,7 @@ a {
     text-align: center;
 }
 
-.form-btn {
+.btn-form {
     display: flex;
     justify-content: space-around;
 }
@@ -109,6 +110,35 @@ a {
 .btn__text {
     margin: 0;
     font-size: .8em;
+}
+
+.fa-mobile-alt,
+.fa-list-ul,
+.fa-store {
+    color: grey;
+}
+
+.fonction {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    border: 1px solid #f6f6f6;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 0 gray;
+    min-height: 68px;
+}
+
+.fonction__item {
+    font-weight: bold;
+    margin-bottom: 23px;
+    text-align: center;
+}
+
+.item:focus {
+    background-color: #f5edff;
 }
 
 .content__image-1 {
@@ -141,13 +171,23 @@ a {
     border-radius: 10px;
 }
 
-img {
-    padding: 25%;
+.img {
+    min-height: 256px;
+}
+
+.sub {
+    margin: 0;
+    padding: 37px 0 0 20px;
 }
 
 .subtitle {
-    margin-top: 55%;
-    background-color: white;
+    padding-top: 55%;
+}
+
+.title-main {
+    padding: 50px 0 27px;
+    margin: 0;
+    background-color: tomato;
 }
 
 .container-footer {
@@ -157,6 +197,7 @@ img {
 
 .logo-footer {
     width: 35%;
+    color: white;
 }
 
 .footer__text {
