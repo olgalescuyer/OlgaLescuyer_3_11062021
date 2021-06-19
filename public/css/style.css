@@ -141,3 +141,16 @@ img {
     margin-top: 55%;
     background-color: white;
 }
+
+.container-footer {
+    max-width: 575px;
+    background-color: #f6f6f6;
+}
+
+.logo-footer {
+    width: 35%;
+}
+
+.footer__text {
+    color: white;
+}
