@@ -39,7 +39,6 @@ a {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    background-color: coral;
 }
 
 .header__logo {
@@ -134,6 +133,11 @@ a {
     border-radius: 10px;
 }
 
-.img {
+img {
     padding: 25%;
+}
+
+.subtitle {
+    margin-top: 55%;
+    background-color: white;
 }
