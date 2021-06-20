@@ -3,6 +3,7 @@
 
 /*=====================GENERAL=================*/
 
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 * {
     box-sizing: border-box;
 }
@@ -17,6 +18,11 @@ button {
 
 
 /*====================RESET====================*/
+
+p,
+h1 {
+    margin: 0;
+}
 
 li {
     list-style: none;
@@ -134,7 +140,7 @@ a {
     color: grey;
 }
 
-.container-fonction {
+.fonction__container {
     display: flex;
     flex-direction: column;
     padding: 0 20px;
@@ -158,7 +164,7 @@ a {
     background-color: f5edff;
 }
 
-.container-content {
+.content__container {
     padding: 0 20px;
     background-color: #f6f6f6;
 }
@@ -203,6 +209,9 @@ a {
     box-shadow: 1px 1px 10px 0 gray;
 }
 
+
+/*=======================MENU PAGES===========================*/
+
 .img {
     min-height: 256px;
 }
@@ -212,22 +221,63 @@ a {
     padding: 37px 0 0 20px;
 }
 
-.subtitle {
-    padding-top: 55%;
+.menu__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 37px 38px 28px 15px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-color: #f6f6f6;
+    width: 100%;
+    margin: 0;
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.4em;
 }
 
-.title-main {
+.menu__wrapper {
+    padding: 0 15px;
+    background-color: #f6f6f6;
+}
+
+.menu__btn-form {
+    padding: 37px 0 58px;
+}
+
+.menu__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 11px;
+    margin: 15px 0;
+    background-color: white;
+}
+
+.menu__item_text {
+    margin: 0;
+    line-height: 1.5em;
+    font-size: .9em;
+}
+
+.menu__image {
+    min-height: 280px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.head-title {
     padding: 50px 0 27px;
     margin: 0;
 }
 
-.container-footer {
+.footer__container {
     max-width: 575px;
     background-color: #353535;
     padding: 0 20px 26px;
+    margin: 0;
 }
 
-.logo-footer {
+.footer__logo {
     width: 35%;
     color: white;
     padding: 28px 0;
