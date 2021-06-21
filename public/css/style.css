@@ -122,6 +122,15 @@ a {
     padding: 1.1em;
     background-color: #FF79DA;
     color: white;
+    transition: 1s;
+}
+
+.btn:hover {
+    background-color: #9356DC;
+    transition: 2s;
+    transform: scale(1.1);
+    transition: transform 1000ms ease-in-out;
+    box-shadow: 1px 1px 10px 0 gray;
 }
 
 .btn__text {
@@ -138,8 +147,6 @@ a {
 }
 
 .item {
-    border: 1px solid #f6f6f6;
-    background-color: #f6f6f6;
     border-radius: 20px;
     box-shadow: 1px 1px 10px 0 gray;
     min-height: 68px;
@@ -161,10 +168,15 @@ a {
     font-weight: bold;
     margin-bottom: 23px;
     text-align: center;
+    border: 1px solid #f6f6f6;
+    background-color: #f6f6f6;
 }
 
 .fonction__item:hover {
-    background-color: f5edff;
+    transform: scale(.9);
+    background-color: #f5edff;
+    transition: transform 1000ms ease-in-out;
+    box-shadow: 1px 1px 10px 0 #9356DC;
 }
 
 
