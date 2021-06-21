@@ -16,6 +16,18 @@ button {
     font-size: 1em;
 }
 
+.main-wrapper {
+    max-width: 576px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.link-block {
+    display: block;
+}
+
 
 /*====================RESET====================*/
 
@@ -36,18 +48,6 @@ ul {
 a {
     text-decoration: none;
     color: black;
-}
-
-.link-block {
-    display: block;
-}
-
-.main-wrapper {
-    max-width: 576px;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
 }
 
 
