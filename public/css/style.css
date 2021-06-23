@@ -201,6 +201,10 @@
         color: #9356DC;
         cursor: pointer;
     }
+    
+    .fonction__item:hover>.fa-hover {
+        color: #9356DC;
+    }
     /*===============================================*/
     /* 06. SECTION CONTENT		 						 */
     /*===============================================*/
@@ -272,7 +276,7 @@
         background-color: #99E2D0;
         color: #3d7062;
         padding: 12px 12px;
-        margin: 13px 13px;
+        margin: 15px 15px;
     }
     /*===============================================*/
     /* 07. MENU PAGES			 						 */
