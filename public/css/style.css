@@ -173,6 +173,7 @@ a {
     box-shadow: 1px 1px 10px 0 gray;
     background: radial-gradient(#e67ec8, #FF79DA, #9356DC);
     border: 1px solid #9356DC;
+    cursor: pointer;
 }
 
 .btn__text {
@@ -230,6 +231,7 @@ a {
     transition: transform 1000ms ease-in-out;
     box-shadow: 1px 1px 10px 0 #9356DC;
     color: #9356DC;
+    cursor: pointer;
 }
 
 
