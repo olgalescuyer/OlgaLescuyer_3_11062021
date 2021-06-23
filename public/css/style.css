@@ -194,6 +194,7 @@
     
     .fonction__text {
         text-align: left;
+        min-width: 191px;
     }
     
     .fonction__item:hover {
