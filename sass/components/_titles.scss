@@ -4,5 +4,5 @@
 }
 
 .menu__head-title {
-    font-family: 'Shrikhand', cursive;
+    @include head-title-cursive;
 }
