@@ -87,6 +87,11 @@ button {
   width: 100%;
 }
 
+.title {
+  padding: 0 24px;
+  text-align: center;
+}
+
 .header__logo {
   width: 43%;
   margin: 0 28%;
@@ -101,6 +106,55 @@ button {
 .footer__text {
   color: white;
   line-height: 1.5em;
+}
+
+.geo__text {
+  display: block;
+  text-align: center;
+  padding: 17px 80px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #575555;
+  margin: 0;
+}
+
+.text {
+  text-align: center;
+}
+
+.btn-form {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  width: 58.45%;
+  border-radius: 5em;
+  border: 1px solid #FF79DA;
+  padding: 1.1em;
+  background-color: #FF79DA;
+  color: white;
+  transition: 1s;
+}
+
+.btn:hover {
+  transition: 2s;
+  transform: scale(1.1);
+  transition: transform 600ms ease-in-out;
+  box-shadow: 1px 1px 10px 0 gray;
+  background: radial-gradient(#e67ec8, #FF79DA, #9356DC);
+  border: 1px solid #9356DC;
+  cursor: pointer;
+}
+
+.btn__text {
+  margin: 0;
+  font-size: 0.8em;
+}
+
+.fa-map-marker-alt {
+  color: black;
+  padding-right: 1.1em;
 }
 
 /*# sourceMappingURL=style.css.map */

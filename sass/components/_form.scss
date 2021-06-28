@@ -1,0 +1,29 @@
+.btn-form {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    width: 58.45%;
+    border-radius: 5em;
+    border: 1px solid #FF79DA;
+    padding: 1.1em;
+    background-color: #FF79DA;
+    color: white;
+    transition: 1s;
+}
+
+.btn:hover {
+    transition: 2s;
+    transform: scale(1.1);
+    transition: transform 600ms ease-in-out;
+    box-shadow: 1px 1px 10px 0 gray;
+    background: radial-gradient(#e67ec8, #FF79DA, #9356DC);
+    border: 1px solid #9356DC;
+    cursor: pointer;
+}
+
+.btn__text {
+    margin: 0;
+    font-size: .8em;
+}
