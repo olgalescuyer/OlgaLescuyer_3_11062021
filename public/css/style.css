@@ -290,6 +290,7 @@ button {
 
 .fa-heart:hover {
   color: #9356DC;
+  font-weight: bolder;
 }
 
 .item__sticker {

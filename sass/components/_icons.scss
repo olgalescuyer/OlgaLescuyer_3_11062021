@@ -14,5 +14,6 @@
 }
 
 .fa-heart:hover {
-    color: #9356DC;
+    color: $colour-primary;
+    font-weight: bolder;
 }
