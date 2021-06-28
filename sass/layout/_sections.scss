@@ -1,0 +1,40 @@
+    .fonction__container {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    
+    .fonction {
+        &__item {
+            @include item;
+            font-weight: bold;
+            margin-bottom: 23px;
+            border: 1px solid #f6f6f6;
+            background-color: #f6f6f6;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0 100px 0 30px;
+        }
+        &__item:hover {
+            transform: scale(.9);
+            background-color: #f5edff;
+            transition: transform 1000ms ease-in-out;
+            box-shadow: 1px 1px 10px 0 #9356DC;
+            color: #9356DC;
+            cursor: pointer;
+        }
+    }
+    
+    .fonction__item:hover {
+        transform: scale(.9);
+        background-color: #f5edff;
+        transition: transform 1000ms ease-in-out;
+        box-shadow: 1px 1px 10px 0 #9356DC;
+        color: #9356DC;
+        cursor: pointer;
+    }
+    
+    .fonction__item:hover>.fa-hover {
+        color: #9356DC;
+    }
