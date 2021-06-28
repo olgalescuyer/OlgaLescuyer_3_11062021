@@ -27,19 +27,28 @@ h2 {
 
 body,
 button {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   background-color: white;
   font-size: 1em;
 }
 
 .fonction__head-title {
   padding: 50px 0 27px;
-  margin: 0;
 }
 
-.menu__head-title {
+.menu__heading {
+  font-family: "Shrikhand";
   font-size: 1.5em;
-  font-family: "Shrikhand", cursive;
+  letter-spacing: 0.2vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 37px 38px 28px 15px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  background-color: #f6f6f6;
+  width: 100%;
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
