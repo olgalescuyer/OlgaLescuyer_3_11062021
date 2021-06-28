@@ -1,0 +1,14 @@
+.search {
+    background-color: $colour-fond;
+    &__geo {
+        background-color: #eaeaea;
+    }
+    &__title {
+        margin: 0;
+        padding-bottom: 58px;
+    }
+    &__box-title {
+        margin: 0;
+        padding: 40px 30px 30px 30px;
+    }
+}

@@ -54,6 +54,21 @@ button {
   margin: 0;
 }
 
+.search {
+  background-color: #f6f6f6;
+}
+.search__geo {
+  background-color: #eaeaea;
+}
+.search__title {
+  margin: 0;
+  padding-bottom: 58px;
+}
+.search__box-title {
+  margin: 0;
+  padding: 40px 30px 30px 30px;
+}
+
 .fonction__head-title {
   padding: 50px 0 27px;
 }
