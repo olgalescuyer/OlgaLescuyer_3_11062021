@@ -27,7 +27,17 @@
                 }
             }
             
-            .content__container {
+            .circle {
+                background-color: $colour-primary;
+                color: white;
+                border-radius: 50%;
+                width: 20px;
+                text-align: center;
+                position: relative;
+                right: 12%;
+            }
+            
+            .circle .content__container {
                 padding: 0 20px 65px;
                 background-color: #f6f6f6;
             }
@@ -88,8 +98,5 @@
                     min-height: 350px;
                     display: flex;
                     align-items: flex-end
-                }
-                &__icon {
-                    font-size: 1em;
                 }
             }

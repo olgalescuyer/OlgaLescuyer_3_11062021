@@ -135,7 +135,17 @@ button {
   color: #9356DC;
 }
 
-.content__container {
+.circle {
+  background-color: #9356DC;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  text-align: center;
+  position: relative;
+  right: 12%;
+}
+
+.circle .content__container {
   padding: 0 20px 65px;
   background-color: #f6f6f6;
 }
@@ -199,9 +209,6 @@ button {
   min-height: 350px;
   display: flex;
   align-items: flex-end;
-}
-.menu__icon {
-  font-size: 1em;
 }
 
 .fonction__head-title {
