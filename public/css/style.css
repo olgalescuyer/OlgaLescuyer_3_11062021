@@ -41,6 +41,11 @@ button {
   overflow: hidden;
 }
 
+.menu__wrapper {
+  padding: 0 15px;
+  background-color: #f6f6f6;
+}
+
 .header {
   display: flex;
   justify-content: space-around;
@@ -99,6 +104,10 @@ button {
   font-size: 0.8em;
 }
 
+.menu__btn-form {
+  padding: 37px 0 58px;
+}
+
 .fonction__container {
   display: flex;
   flex-direction: column;
@@ -111,7 +120,6 @@ button {
   min-height: 68px;
   font-weight: bold;
   margin-bottom: 23px;
-  border: 1px solid #f6f6f6;
   background-color: #f6f6f6;
   display: flex;
   justify-content: space-around;
@@ -126,18 +134,74 @@ button {
   color: #9356DC;
   cursor: pointer;
 }
-
-.fonction__item:hover {
-  transform: scale(0.9);
-  background-color: #f5edff;
-  transition: transform 1000ms ease-in-out;
-  box-shadow: 1px 1px 10px 0 #9356DC;
-  color: #9356DC;
-  cursor: pointer;
-}
-
 .fonction__item:hover > .fa-hover {
   color: #9356DC;
+}
+
+.content__container {
+  padding: 0 20px 65px;
+  background-color: #f6f6f6;
+}
+
+.content__image-1 {
+  background: url("../img/restaurants/la-palette-du-gout.jpg") no-repeat;
+  background-size: cover;
+}
+
+.content__image-2 {
+  background: url("../img/restaurants/la-note-enchantee.jpg") no-repeat;
+  background-size: cover;
+}
+
+.content__image-3 {
+  background: url("../img/restaurants/a-la-francaise.jpg") no-repeat;
+  background-size: cover;
+}
+
+.content__image-4 {
+  background: url("../img/restaurants/le-delice-des-sens.jpg") no-repeat;
+  background-size: cover;
+}
+
+.content__element {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  min-height: 252px;
+  border-radius: 10px;
+  margin-bottom: 17px;
+  box-shadow: 1px 1px 10px 0 gray;
+}
+
+.menu__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 37px 38px 28px 15px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  background-color: #f6f6f6;
+  width: 100%;
+  margin: 0;
+  font-family: "Shrikhand";
+  font-size: 1.8em;
+}
+.menu__item {
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px 0 gray;
+  min-height: 68px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 0 11px;
+  margin: 15px 0;
+  background-color: white;
+}
+.menu__image {
+  min-height: 310px;
+  display: flex;
+  align-items: flex-end;
 }
 
 .fonction__head-title {
@@ -203,6 +267,26 @@ button {
   min-width: 191px;
 }
 
+.content__text-element {
+  width: 100%;
+  background-color: white;
+  margin-top: 30%;
+  padding: 15px;
+  text-align: left;
+  line-height: 1.5em;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__text-item {
+  margin: 0;
+  line-height: 1.5em;
+  font-size: 0.9em;
+}
+
 .fa-map-marker-alt {
   color: black;
   padding-right: 1.1em;
@@ -220,6 +304,18 @@ button {
 
 .fa-heart:hover {
   color: #9356DC;
+}
+
+.item__sticker {
+  padding: 12px 12px;
+  margin: 15px 15px;
+}
+.item__sticker_green {
+  background-color: #99E2D0;
+  color: #3d7062;
+}
+.item__sticker_trans {
+  color: transparent;
 }
 
 /*# sourceMappingURL=style.css.map */
