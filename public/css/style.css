@@ -47,8 +47,6 @@ button {
 }
 
 .header {
-  display: flex;
-  justify-content: space-around;
   width: 100%;
 }
 
@@ -124,7 +122,6 @@ button {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 0 100px 0 30px;
 }
 .fonction__item:hover {
   transform: scale(0.9);
@@ -175,17 +172,17 @@ button {
 }
 
 .menu__heading {
+  font-family: "Shrikhand";
+  font-size: 1.1em;
+  letter-spacing: 0.2vh;
+  background-color: #f6f6f6;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 37px 38px 28px 15px;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  background-color: #f6f6f6;
   width: 100%;
-  margin: 0;
-  font-family: "Shrikhand";
-  font-size: 1.8em;
 }
 .menu__item {
   border-radius: 20px;
@@ -199,27 +196,16 @@ button {
   background-color: white;
 }
 .menu__image {
-  min-height: 310px;
+  min-height: 350px;
   display: flex;
   align-items: flex-end;
+}
+.menu__icon {
+  font-size: 1em;
 }
 
 .fonction__head-title {
   padding: 50px 0 27px;
-}
-
-.menu__heading {
-  font-family: "Shrikhand";
-  font-size: 1.5em;
-  letter-spacing: 0.2vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 37px 38px 28px 15px;
-  border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
-  background-color: #f6f6f6;
-  width: 100%;
 }
 
 .title {
@@ -234,8 +220,8 @@ button {
 
 .header__logo {
   width: 43%;
-  margin: 0 28%;
   padding: 20px 0 18px;
+  margin: 0 28%;
 }
 
 .footer__logo {
