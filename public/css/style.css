@@ -41,6 +41,19 @@ button {
   overflow: hidden;
 }
 
+.header {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.footer__container {
+  max-width: 575px;
+  background-color: #353535;
+  padding: 0 20px 26px;
+  margin: 0;
+}
+
 .fonction__head-title {
   padding: 50px 0 27px;
 }
@@ -57,6 +70,22 @@ button {
   border-top-right-radius: 40px;
   background-color: #f6f6f6;
   width: 100%;
+}
+
+.header__logo {
+  width: 43%;
+  margin: 0 28%;
+  padding: 20px 0 18px;
+}
+
+.footer__logo {
+  width: 35%;
+  padding: 28px 0;
+}
+
+.footer__text {
+  color: white;
+  line-height: 1.5em;
 }
 
 /*# sourceMappingURL=style.css.map */
