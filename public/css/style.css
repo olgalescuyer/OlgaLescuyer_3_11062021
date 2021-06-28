@@ -1,160 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Shrikhand&display=swap");
-li,
-ul {
-  list-style: none;
-  padding: 0;
-}
+/* Error: Can't find stylesheet to import.
+ *    ,
+ * 12 | @import "./components/form";
+ *    |         ^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   sass\main.scss 12:9  root stylesheet */
 
-a {
-  text-decoration: none;
-  color: black;
-}
-
-body,
-p,
-h1,
-h2 {
-  margin: 0;
-}
-
-.titre {
-  margin: 0;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body,
-button {
-  font-family: "Roboto";
-  background-color: white;
-  font-size: 1em;
-}
-
-.main-wrapper {
-  max-width: 576px;
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
-.header {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-}
-
-.footer__container {
-  max-width: 575px;
-  background-color: #353535;
-  padding: 0 20px 26px;
-  margin: 0;
-}
-
-.search {
-  background-color: #f6f6f6;
-}
-.search__geo {
-  background-color: #eaeaea;
-}
-.search__title {
-  margin: 0;
-  padding-bottom: 58px;
-}
-.search__box-title {
-  margin: 0;
-  padding: 40px 30px 30px 30px;
-}
-
-.fonction__head-title {
-  padding: 50px 0 27px;
-}
-
-.menu__heading {
-  font-family: "Shrikhand";
-  font-size: 1.5em;
-  letter-spacing: 0.2vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 37px 38px 28px 15px;
-  border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
-  background-color: #f6f6f6;
-  width: 100%;
-}
-
-.title {
-  padding: 0 24px;
-  text-align: center;
-}
-
-.header__logo {
-  width: 43%;
-  margin: 0 28%;
-  padding: 20px 0 18px;
-}
-
-.footer__logo {
-  width: 35%;
-  padding: 28px 0;
-}
-
-.footer__text {
-  color: white;
-  line-height: 1.5em;
-}
-
-.geo__text {
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
   display: block;
-  text-align: center;
-  padding: 17px 80px;
-  font-size: 1.1em;
-  font-weight: bold;
-  color: #575555;
-  margin: 0;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a    \2577 \a 12 \2502  @import \"./components/form\";\d\a    \2502          ^^^^^^^^^^^^^^^^^^^\a    \2575 \a   sass\\main.scss 12:9  root stylesheet";
 }
-
-.text {
-  text-align: center;
-}
-
-.btn-form {
-  display: flex;
-  justify-content: space-around;
-}
-
-.btn {
-  width: 58.45%;
-  border-radius: 5em;
-  border: 1px solid #FF79DA;
-  padding: 1.1em;
-  background-color: #FF79DA;
-  color: white;
-  transition: 1s;
-}
-
-.btn:hover {
-  transition: 2s;
-  transform: scale(1.1);
-  transition: transform 600ms ease-in-out;
-  box-shadow: 1px 1px 10px 0 gray;
-  background: radial-gradient(#e67ec8, #FF79DA, #9356DC);
-  border: 1px solid #9356DC;
-  cursor: pointer;
-}
-
-.btn__text {
-  margin: 0;
-  font-size: 0.8em;
-}
-
-.fa-map-marker-alt {
-  color: black;
-  padding-right: 1.1em;
-}
-
-/*# sourceMappingURL=style.css.map */
