@@ -108,9 +108,9 @@ button {
 
 .fonction__item {
   border-radius: 20px;
-  box-shadow: 1px 1px 10px 0 gray;
   min-height: 68px;
   cursor: pointer;
+  box-shadow: 1px 1px 10px 0 gray;
   font-weight: bold;
   margin-bottom: 23px;
   background-color: #f6f6f6;
@@ -193,9 +193,9 @@ button {
 }
 .menu__item {
   border-radius: 20px;
-  box-shadow: 1px 1px 10px 0 gray;
   min-height: 68px;
   cursor: pointer;
+  box-shadow: 1px 1px 10px 0 gray;
   display: flex;
   justify-content: space-between;
   align-items: center;
