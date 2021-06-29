@@ -1,0 +1,9 @@
+    .menu {
+    &__line {
+        color: transparent;
+        height: 2px;
+        transition: transform 400ms;
+        &__line_colour {
+            background-color: $colour-tertiary;
+        }
+    }

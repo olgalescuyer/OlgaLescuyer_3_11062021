@@ -1,104 +1,104 @@
-            .fonction__container {
-                display: flex;
-                flex-direction: column;
-                padding: 0 20px;
-            }
-            
-            .fonction {
-                &__item {
-                    @include item;
-                    font-weight: bold;
-                    margin-bottom: 23px;
-                    background-color: $colour-background-lighter;
+                .fonction__container {
                     display: flex;
-                    justify-content: space-around;
-                    align-items: center;
+                    flex-direction: column;
+                    padding: 0 20px;
                 }
-                &__item:hover {
-                    transform: scale(.9);
-                    background-color: #f5edff;
-                    transition: transform 1000ms ease-in-out;
-                    box-shadow: 1px 1px 10px 0 $colour-primary;
-                    color: $colour-primary;
-                    cursor: pointer;
+                
+                .fonction {
+                    &__item {
+                        @include item;
+                        font-weight: bold;
+                        margin-bottom: 23px;
+                        background-color: $colour-background-lighter;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                    }
+                    &__item:hover {
+                        transform: scale(.9);
+                        background-color: #f5edff;
+                        transition: transform 1000ms ease-in-out;
+                        box-shadow: 1px 1px 10px 0 $colour-primary;
+                        color: $colour-primary;
+                        cursor: pointer;
+                    }
+                    &__item:hover>.fa-hover {
+                        color: $colour-primary;
+                    }
                 }
-                &__item:hover>.fa-hover {
-                    color: $colour-primary;
+                
+                .circle {
+                    background-color: $colour-primary;
+                    color: white;
+                    border-radius: 50%;
+                    width: 20px;
+                    text-align: center;
+                    position: absolute;
+                    z-index: 1;
+                    bottom: 9px;
+                    left: 3px;
                 }
-            }
-            
-            .circle {
-                background-color: $colour-primary;
-                color: white;
-                border-radius: 50%;
-                width: 20px;
-                text-align: center;
-                position: absolute;
-                z-index: 1;
-                bottom: 9px;
-                left: 3px;
-            }
-            
-            .circle .content__container {
-                padding: 0 20px 65px;
-                background-color: #f6f6f6;
-            }
-            
-            .content__image-1 {
-                background: url("../img/restaurants/la-palette-du-gout.jpg") no-repeat;
-                background-size: cover;
-            }
-            
-            .content__image-2 {
-                background: url("../img/restaurants/la-note-enchantee.jpg") no-repeat;
-                background-size: cover;
-            }
-            
-            .content__image-3 {
-                background: url("../img/restaurants/a-la-francaise.jpg") no-repeat;
-                background-size: cover;
-            }
-            
-            .content__image-4 {
-                background: url("../img/restaurants/le-delice-des-sens.jpg") no-repeat;
-                background-size: cover;
-            }
-            
-            .content__element {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: flex-end;
-                min-height: 252px;
-                border-radius: 10px;
-                margin-bottom: 17px;
-                box-shadow: 1px 1px 10px 0 $colour-shadow-darker;
-            }
-            
-            .menu {
-                &__heading {
-                    @include head-title-cursive;
-                    background-color: $colour-background-lighter;
+                
+                .content__container {
+                    padding: 0 20px 65px;
+                    background-color: #f6f6f6;
+                }
+                
+                .content__image-1 {
+                    background: url("../img/restaurants/la-palette-du-gout.jpg") no-repeat;
+                    background-size: cover;
+                }
+                
+                .content__image-2 {
+                    background: url("../img/restaurants/la-note-enchantee.jpg") no-repeat;
+                    background-size: cover;
+                }
+                
+                .content__image-3 {
+                    background: url("../img/restaurants/a-la-francaise.jpg") no-repeat;
+                    background-size: cover;
+                }
+                
+                .content__image-4 {
+                    background: url("../img/restaurants/le-delice-des-sens.jpg") no-repeat;
+                    background-size: cover;
+                }
+                
+                .content__element {
                     display: flex;
+                    flex-direction: column;
                     justify-content: space-between;
-                    align-items: center;
-                    padding: 37px 38px 28px 15px;
-                    border-top-left-radius: 40px;
-                    border-top-right-radius: 40px;
-                    width: 100%;
+                    align-items: flex-end;
+                    min-height: 252px;
+                    border-radius: 10px;
+                    margin-bottom: 17px;
+                    box-shadow: 1px 1px 10px 0 $colour-shadow-darker;
                 }
-                &__item {
-                    @include item;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    padding: 0 20px 0 11px;
-                    margin: 15px 0;
-                    background-color: white;
+                
+                .menu {
+                    &__heading {
+                        @include head-title-cursive;
+                        background-color: $colour-background-lighter;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 37px 38px 28px 15px;
+                        border-top-left-radius: 40px;
+                        border-top-right-radius: 40px;
+                        width: 100%;
+                    }
+                    &__item {
+                        @include item;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 0 20px 0 11px;
+                        margin: 15px 0;
+                        background-color: white;
+                    }
+                    &__image {
+                        min-height: 350px;
+                        display: flex;
+                        align-items: flex-end
+                    }
                 }
-                &__image {
-                    min-height: 350px;
-                    display: flex;
-                    align-items: flex-end
-                }
-            }
