@@ -277,6 +277,7 @@ button {
 .menu__text-item {
   line-height: 1.5em;
   font-size: 0.9em;
+  background-color: chocolate;
 }
 
 .btn__text {
