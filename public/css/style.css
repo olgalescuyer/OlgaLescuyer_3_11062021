@@ -204,6 +204,7 @@ button {
 }
 .menu__image {
   min-height: 350px;
+  margin-top: 60px;
   display: flex;
   align-items: flex-end;
 }
@@ -364,6 +365,7 @@ button {
   }
   100% {
     width: 100%;
+    opacity: 0;
   }
 }
 
