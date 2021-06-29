@@ -90,30 +90,6 @@ button {
   justify-content: space-around;
 }
 
-.btn {
-  width: 58.45%;
-  border-radius: 5em;
-  padding: 1.1em;
-  border: none;
-  background-color: #FF79DA;
-  color: white;
-  transition: transform 400ms;
-}
-
-.btn:hover {
-  transition: 2s;
-  transform: scale(1.1);
-  transition: transform 600ms ease-in-out;
-  box-shadow: 1px 1px 10px 0 gray;
-  background: radial-gradient(#e67ec8, #FF79DA, #9356DC);
-  cursor: pointer;
-}
-
-.btn__text {
-  margin: 0;
-  font-size: 0.8em;
-}
-
 .menu__btn-form {
   padding: 37px 0 58px;
 }
@@ -289,6 +265,11 @@ button {
 .menu__text-item {
   line-height: 1.5em;
   font-size: 0.9em;
+}
+
+.btn__text {
+  margin: 0;
+  font-size: 0.8em;
 }
 
 .fa-map-marker-alt {
