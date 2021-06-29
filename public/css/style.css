@@ -80,11 +80,11 @@ button {
 .btn {
   width: 58.45%;
   border-radius: 5em;
-  border: 1px solid #FF79DA;
   padding: 1.1em;
+  border: none;
   background-color: #FF79DA;
   color: white;
-  transition: 1s;
+  transition: transform 400ms;
 }
 
 .btn:hover {
@@ -93,7 +93,6 @@ button {
   transition: transform 600ms ease-in-out;
   box-shadow: 1px 1px 10px 0 gray;
   background: radial-gradient(#e67ec8, #FF79DA, #9356DC);
-  border: 1px solid #9356DC;
   cursor: pointer;
 }
 
@@ -141,8 +140,10 @@ button {
   border-radius: 50%;
   width: 20px;
   text-align: center;
-  position: relative;
-  right: 12%;
+  position: absolute;
+  z-index: 1;
+  bottom: 9px;
+  left: 3px;
 }
 
 .circle .content__container {
