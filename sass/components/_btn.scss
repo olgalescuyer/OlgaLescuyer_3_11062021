@@ -1,14 +1,31 @@
 .btn {
+    @include shadow;
     width: 58.45%;
     border-radius: 5em;
     padding: 1.1em;
     cursor: pointer;
     background-color: $colour-secondary;
     color: white;
-    transition: all 1000ms ease-in-out;
+    position: relative;
+    z-index: 1;
+    transition: transform 800ms ease-in-out;
     &:hover {
         transform: scale(1.1);
-        background-color: $colour-primary;
-        box-shadow: 1px 1px 10px 0 $colour-shadow-darker;
+        &::after {
+            opacity: 1;
+        }
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        border-radius: 5em;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: radial-gradient(ellipse, lighten($colour-secondary, 5) 0%, darken($colour-primary, 10) 100%);
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 1000ms;
     }
 }

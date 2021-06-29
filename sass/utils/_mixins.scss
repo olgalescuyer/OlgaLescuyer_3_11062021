@@ -10,3 +10,7 @@
     min-height: 68px;
     cursor: pointer;
 }
+
+@mixin shadow {
+    box-shadow: 1px 1px 10px 0 $colour-shadow-darker;
+}
