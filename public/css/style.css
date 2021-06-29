@@ -185,7 +185,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 37px 38px 28px 15px;
+  padding: 30px 22px 5px;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   width: 100%;
@@ -221,6 +221,10 @@ button {
 .head-title {
   padding: 50px 0 27px;
   margin: 0;
+}
+
+.menu__subtitle {
+  padding-top: 25px;
 }
 
 .header__logo {
