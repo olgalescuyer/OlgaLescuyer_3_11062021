@@ -304,4 +304,23 @@ button {
   color: transparent;
 }
 
+.btn {
+  width: 58.45%;
+  border-radius: 5em;
+  padding: 1.1em;
+  border: none;
+  cursor: pointer;
+  background-color: #FF79DA;
+  color: white;
+  transition: transform 400ms;
+}
+
+.btn:hover {
+  transition: 2s;
+  transform: scale(1.1);
+  transition: transform 600ms ease-in-out;
+  box-shadow: 1px 1px 10px 0 gray;
+  background: radial-gradient(#e67ec8, #FF79DA, #9356DC);
+}
+
 /*# sourceMappingURL=style.css.map */

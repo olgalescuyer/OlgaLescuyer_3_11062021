@@ -3,6 +3,7 @@
     border-radius: 5em;
     padding: 1.1em;
     border: none;
+    cursor: pointer;
     background-color: $colour-secondary;
     color: white;
     transition: transform 400ms;
@@ -14,5 +15,4 @@
     transition: transform 600ms ease-in-out;
     box-shadow: 1px 1px 10px 0 $colour-shadow-darker;
     background: radial-gradient(#e67ec8, $colour-secondary, $colour-primary);
-    cursor: pointer;
 }
