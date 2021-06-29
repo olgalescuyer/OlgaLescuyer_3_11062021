@@ -1,7 +1,8 @@
 .search {
-    background-color: $colour-fond;
+    background-color: $colour-background-lighter;
     &__geo {
         background-color: #eaeaea;
+        box-shadow: inset 1px 17px 7px -16px $colour-shadow-darker;
     }
     &__title {
         margin: 0;

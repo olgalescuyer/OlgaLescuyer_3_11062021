@@ -17,8 +17,8 @@
     transition: 2s;
     transform: scale(1.1);
     transition: transform 600ms ease-in-out;
-    box-shadow: 1px 1px 10px 0 gray;
-    background: radial-gradient(#e67ec8, #FF79DA, #9356DC);
+    box-shadow: 1px 1px 10px 0 $colour-shadow-darker;
+    background: radial-gradient(#e67ec8, $colour-secondary, $colour-primary);
     cursor: pointer;
 }
 

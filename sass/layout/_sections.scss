@@ -9,7 +9,7 @@
                     @include item;
                     font-weight: bold;
                     margin-bottom: 23px;
-                    background-color: $colour-fond;
+                    background-color: $colour-background-lighter;
                     display: flex;
                     justify-content: space-around;
                     align-items: center;
@@ -72,13 +72,13 @@
                 min-height: 252px;
                 border-radius: 10px;
                 margin-bottom: 17px;
-                box-shadow: 1px 1px 10px 0 gray;
+                box-shadow: 1px 1px 10px 0 $colour-shadow-darker;
             }
             
             .menu {
                 &__heading {
                     @include head-title-cursive;
-                    background-color: $colour-fond;
+                    background-color: $colour-background-lighter;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
