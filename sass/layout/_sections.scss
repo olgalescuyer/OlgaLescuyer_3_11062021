@@ -112,7 +112,7 @@
         min-height: 68px;
         width: 70px;
         position: absolute;
-        left: 291px;
+        left: 50%;
         overflow: hidden;
         background-position: -20%;
         z-index: 1;
@@ -121,7 +121,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        animation: 3s infinite alternate checked;
+        animation: 4s infinite alternate checked;
     }
     &__image {
         min-height: 350px;
