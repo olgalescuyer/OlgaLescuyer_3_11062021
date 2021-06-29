@@ -1,9 +1,20 @@
-        .menu {
-            &__line {
-                height: 2px;
-                transition: transform 400ms;
-            }
-            &__line_colour {
-                background-color: $colour-tertiary;
-            }
-        }
+.menu {
+    &__line {
+        height: 2px;
+    }
+    &__line_colour {
+        background-color: $colour-tertiary;
+    }
+    &__box-line {
+        animation: 3s infinite alternate line;
+    }
+}
+
+@keyframes line {
+    0% {
+        width: 10%;
+    }
+    100% {
+        width: 100%;
+    }
+}

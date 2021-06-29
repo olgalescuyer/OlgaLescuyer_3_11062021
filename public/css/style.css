@@ -180,8 +180,7 @@ button {
 
 .menu__heading {
   font-family: "Shrikhand";
-  font-size: 1.1em;
-  letter-spacing: 0.2vh;
+  font-size: 1.2em;
   background-color: #f6f6f6;
   display: flex;
   justify-content: space-between;
@@ -351,10 +350,21 @@ button {
 
 .menu__line {
   height: 2px;
-  transition: transform 400ms;
 }
 .menu__line_colour {
   background-color: #99E2D0;
+}
+.menu__box-line {
+  animation: 3s infinite alternate line;
+}
+
+@keyframes line {
+  0% {
+    width: 10%;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
