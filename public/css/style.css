@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Shrikhand&display=swap");
 li,
 ul {
   list-style: none;
@@ -91,15 +89,6 @@ button {
 .search__box-title {
   margin: 0;
   padding: 40px 30px 30px 30px;
-}
-
-.btn-form {
-  display: flex;
-  justify-content: space-around;
-}
-
-.menu__btn-form {
-  padding: 37px 0 58px;
 }
 
 .fonction__container {
@@ -267,6 +256,15 @@ button {
 .fa-check-circle {
   transition: all 1000ms ease-in-out;
   opacity: 0;
+}
+
+.btn-form {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu__btn-form {
+  padding: 37px 0 58px;
 }
 
 .fonction__head-title {
