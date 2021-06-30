@@ -37,18 +37,6 @@
     }
 }
 
-.circle {
-    background-color: $colour-primary;
-    color: white;
-    border-radius: 50%;
-    width: 20px;
-    text-align: center;
-    position: absolute;
-    z-index: 1;
-    bottom: 9px;
-    left: 3px;
-}
-
 .content__container {
     padding: 0 20px 65px;
     background-color: $colour-background-lighter;
@@ -100,28 +88,45 @@
     &__item {
         @include item;
         @include shadow;
+        overflow: hidden;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 0 20px 0 11px;
         margin: 15px 0;
         background-color: white;
+        &:hover {
+            &>.menu__checked-item {
+                animation-name: checked;
+                animation-duration: 1s;
+                animation-direction: reverse;
+                animation-fill-mode: forwards;
+                &>.fa-check-circle {
+                    transform: rotate(-360deg);
+                    opacity: 1;
+                }
+            }
+        }
+        &:active {
+            &>.menu__checked-item {
+                animation-fill-mode: forwards;
+            }
+        }
     }
     &__checked-item {
         background-color: $colour-tertiary;
         min-height: 68px;
         width: 70px;
         position: absolute;
-        left: 50%;
+        left: 43%;
+        opacity: 0;
         overflow: hidden;
-        background-position: -20%;
         z-index: 1;
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
-        animation: 4s infinite alternate checked;
     }
     &__image {
         min-height: 350px;
@@ -133,9 +138,25 @@
 
 @keyframes checked {
     0% {
-        transform: translateX(-9999px);
+        transform: scaleX(1);
+        opacity: 1;
+        left: 39%;
+    }
+    10% {
+        border-radius: 0;
+    }
+    50% {
+        border-radius: 0;
     }
     100% {
-        transform: translateX(0);
+        transform: scaleX(0);
+        border-radius: 0;
+        left: 43%;
+        opacity: 1;
     }
+}
+
+.fa-check-circle {
+    transition: all 1000ms ease-in-out;
+    opacity: 0;
 }
