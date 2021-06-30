@@ -376,15 +376,15 @@ button {
   font-size: 1.2em;
 }
 
-.item__sticker {
+.sticker {
   padding: 12px 12px;
   margin: 15px 15px;
 }
-.item__sticker_green {
+.sticker_green {
   background-color: #99E2D0;
   color: #3d7062;
 }
-.item__sticker_trans {
+.sticker_trans {
   color: transparent;
 }
 
