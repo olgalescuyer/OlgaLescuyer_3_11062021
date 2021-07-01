@@ -1,21 +1,17 @@
-.menu {
-    &__line {
-        height: 2px;
-    }
-    &__line_colour {
-        background-color: $colour-tertiary;
-    }
-    &__box-line {
-        animation: 3s infinite alternate line;
-    }
-}
-
-@keyframes line {
-    0% {
-        width: 10%;
-    }
-    100% {
-        width: 100%;
-        opacity: 0;
-    }
-}
+   .line {
+       height: 2px;
+       animation: 3s infinite alternate line;
+       &_colour {
+           background-color: $colour-tertiary;
+       }
+   }
+   
+   @keyframes line {
+       0% {
+           width: 10%;
+       }
+       100% {
+           width: 100%;
+           opacity: 0;
+       }
+   }

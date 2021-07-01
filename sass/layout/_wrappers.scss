@@ -1,4 +1,7 @@
 .main-wrapper {
+    @media (min-width: $screen-sm) {
+        max-width: 576px;
+    }
     max-width: 576px;
     min-height: 100%;
     display: flex;
@@ -7,6 +10,9 @@
 }
 
 .menu__wrapper {
+    @media (min-width: $screen-sm) {
+        max-width: 576px;
+    }
     padding: 0 15px;
     background-color: $colour-background-lighter;
 }

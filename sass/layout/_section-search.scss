@@ -1,4 +1,7 @@
 .search {
+    @media (min-width: $screen-sm) {
+        max-width: 576px;
+    }
     background-color: $colour-background-lighter;
     &__geo {
         background-color: #eaeaea;

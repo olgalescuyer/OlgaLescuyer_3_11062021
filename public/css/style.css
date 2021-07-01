@@ -48,10 +48,20 @@ button {
   flex-direction: column;
   overflow: hidden;
 }
+@media (min-width: 576px) {
+  .main-wrapper {
+    max-width: 576px;
+  }
+}
 
 .menu__wrapper {
   padding: 0 15px;
   background-color: #f6f6f6;
+}
+@media (min-width: 576px) {
+  .menu__wrapper {
+    max-width: 576px;
+  }
 }
 
 @media (min-width: 576px) {
@@ -91,6 +101,11 @@ button {
 .search {
   background-color: #f6f6f6;
 }
+@media (min-width: 576px) {
+  .search {
+    max-width: 576px;
+  }
+}
 .search__geo {
   background-color: #eaeaea;
   box-shadow: inset 1px 17px 7px -16px gray;
@@ -105,12 +120,16 @@ button {
   padding: 40px 30px 30px 30px;
 }
 
+@media (min-width: 576px) {
+  .fonction {
+    max-width: 576px;
+  }
+}
 .fonction__container {
   display: flex;
   flex-direction: column;
   padding: 0 20px;
 }
-
 .fonction__item {
   border-radius: 20px;
   min-height: 68px;
@@ -152,11 +171,15 @@ button {
   color: #9356DC;
 }
 
+@media (min-width: 576px) {
+  .content {
+    max-width: 576px;
+  }
+}
 .content__container {
   padding: 0 20px 65px;
   background-color: #f6f6f6;
 }
-
 .content__element {
   display: flex;
   flex-direction: column;
@@ -168,6 +191,11 @@ button {
   box-shadow: 1px 1px 10px 0 gray;
 }
 
+@media (min-width: 576px) {
+  .menu {
+    max-width: 576px;
+  }
+}
 .menu__heading {
   font-family: "Shrikhand";
   font-size: 1.2em;
@@ -179,6 +207,15 @@ button {
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   width: 100%;
+}
+.menu__image {
+  min-height: 350px;
+  margin-top: 60px;
+  display: flex;
+  align-items: flex-end;
+}
+.menu__btn-form {
+  padding: 37px 0 58px;
 }
 .menu__item {
   border-radius: 20px;
@@ -221,12 +258,6 @@ button {
   justify-content: center;
   align-items: center;
 }
-.menu__image {
-  min-height: 350px;
-  margin-top: 60px;
-  display: flex;
-  align-items: flex-end;
-}
 
 @keyframes checked {
   0% {
@@ -250,10 +281,6 @@ button {
 .fa-check-circle {
   transition: all 1000ms ease-in-out;
   opacity: 0;
-}
-
-.menu__btn-form {
-  padding: 37px 0 58px;
 }
 
 .btn-form {
@@ -409,14 +436,12 @@ button {
   transition: opacity 1000ms;
 }
 
-.menu__line {
+.line {
   height: 2px;
-}
-.menu__line_colour {
-  background-color: #99E2D0;
-}
-.menu__box-line {
   animation: 3s infinite alternate line;
+}
+.line_colour {
+  background-color: #99E2D0;
 }
 
 @keyframes line {

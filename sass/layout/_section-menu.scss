@@ -1,4 +1,7 @@
 .menu {
+    @media (min-width: $screen-sm) {
+        max-width: 576px;
+    }
     &__heading {
         @include head-title-cursive;
         background-color: $colour-background-lighter;
@@ -9,6 +12,15 @@
         border-top-left-radius: 40px;
         border-top-right-radius: 40px;
         width: 100%;
+    }
+    &__image {
+        min-height: 350px;
+        margin-top: 60px;
+        display: flex;
+        align-items: flex-end
+    }
+    &__btn-form {
+        padding: 37px 0 58px;
     }
     &__item {
         @include item;
@@ -53,12 +65,6 @@
         justify-content: center;
         align-items: center;
     }
-    &__image {
-        min-height: 350px;
-        margin-top: 60px;
-        display: flex;
-        align-items: flex-end
-    }
 }
 
 @keyframes checked {
@@ -84,8 +90,4 @@
 .fa-check-circle {
     transition: all 1000ms ease-in-out;
     opacity: 0;
-}
-
-.menu__btn-form {
-    padding: 37px 0 58px;
 }

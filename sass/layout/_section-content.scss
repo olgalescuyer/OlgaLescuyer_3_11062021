@@ -1,15 +1,19 @@
-.content__container {
-    padding: 0 20px 65px;
-    background-color: $colour-background-lighter;
-}
-
-.content__element {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-    min-height: 252px;
-    border-radius: 10px;
-    margin-bottom: 17px;
-    @include shadow;
+.content {
+    @media (min-width: $screen-sm) {
+        max-width: 576px;
+    }
+    &__container {
+        padding: 0 20px 65px;
+        background-color: $colour-background-lighter;
+    }
+    &__element {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        min-height: 252px;
+        border-radius: 10px;
+        margin-bottom: 17px;
+        @include shadow;
+    }
 }
