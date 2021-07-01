@@ -28,41 +28,48 @@
             <section class="menu">
 
                 <div class="menu__container">
+                    <!--élément du block 'menu' qui contient tout le contenue de la page-->
 
                     <div class="menu__image image-1 ">
+                        <!--élément du block 'menu' qui se trouve en haut de la page et contient le heading = image + nom du restau + 'chapeau' : avec couleur,bordure,icon-->
 
                         <div class="menu__heading">
 
-                            <h1 class="">La palette du goût</h1>
-                            <i class="far fa-heart menu__fa-heart"></i>
+                            <h1>La palette du goût</h1>
+                            <i class="far fa-heart"></i>
 
                         </div>
 
                     </div>
 
-                    <div class="menu__wrapper">
+                    <div class="menu__box-list">
+                        <!--élément du block 'menu' qui contient 3 block du 'menu-list'-->
 
-                        <div class="menu__container">
+                        <div class="menu-list">
+                            <!--block = 'son élément__subtitle' + 'block-indépendant' + 'son élément__box-item = 3*__item'-->
 
-                            <p class="menu__subtitle">ENTREES</p>
+                            <p class="menu-list__subtitle">ENTREES</p>
 
-                            <div class="menu__box-line ">
+                            <div class="box-line ">
+                                <!--block-indépendant = _component dans le sass-->
                                 <div class="line line_colour"></div>
                             </div>
 
-                            <div class="menu__box-item">
+                            <div class="menu-list__box-item">
+                                <!--élément = 3*item-->
 
-                                <div class="menu__item item">
-                                    <div class="menu__checked-item"><i class="fas fa-check-circle"></i></div>
+                                <div class="menu-list__item item">
+
+                                    <div class="menu-list__checked-item"><i class="fas fa-check-circle menu-list__icon"></i></div>
                                     <p class="menu__text-item"><b>Fricassée d'escargot</b><br/>Au piment d'espelette</p><span><b>25€</b></span>
 
                                 </div>
 
-                                <div class="menu__item item">
+                                <div class="menu-list__item item">
                                     <p class="menu__text-item"><b>Foie gras de canard mi-cuit</b><br/>Et ses copeaux de truffe noire</p><span><b>35€</b></span>
                                 </div>
 
-                                <div class="menu__item item">
+                                <div class="menu-list__item item">
                                     <p class="menu__text-item"><b>Oeuf au plat</b><br/>Assaisonné à la truffe sur lit de caviar</p><span><b>20€</b></span>
                                 </div>
 
@@ -70,45 +77,53 @@
 
                         </div>
 
-                        <div>
+                        <div class="menu-list">
+                            <!--block = 'son élément__subtitle' + 'block-indépendant' + 'son élément__box-item = 3*__item'-->
 
-                            <p class="menu__subtitle">PLATS</p>
+                            <p class="menu-list__subtitle">PLATS</p>
 
-                            <div class="menu__box-line ">
+                            <div class="box-line ">
                                 <div class="line line_colour"></div>
                             </div>
 
-                            <div class="menu__item item">
-                                <p class="menu__text-item"><b>Filet de boeuf aux herbes</b><br/>Accompagné de sa ribambelle de légume</p><span><b>40€</b></span>
+                            <div class="menu-list__box-item">
+                                <div class="menu-list__item item">
+                                    <p class="menu__text-item"><b>Filet de boeuf aux herbes</b><br/>Accompagné de sa ribambelle de légume</p><span><b>40€</b></span>
+                                </div>
+                                <div class="menu-list__item item">
+                                    <p class="menu__text-item"><b>Filet de boeuf aux herbes</b><br/>Accompagné de sa ribambelle de légume</p><span><b>40€</b></span>
+                                </div>
+                                <div class="menu-list__item item">
+                                    <p class="menu__text-item"><b>Parmentier de queque de boeuf</b><br/>A la truffe noire sur sa purée de panais</p><span><b>35€</b></span>
+                                </div>
+                                <div class="menu-list__item item">
+                                    <p class="menu__text-item"><b>Filet de Turbot</b><br/>Aux agrumes</p><span><b>44€</b></span>
+                                </div>
                             </div>
-                            <div class="menu__item item">
-                                <p class="menu__text-item"><b>Filet de boeuf aux herbes</b><br/>Accompagné de sa ribambelle de légume</p><span><b>40€</b></span>
-                            </div>
-                            <div class="menu__item item">
-                                <p class="menu__text-item"><b>Parmentier de queque de boeuf</b><br/>A la truffe noire sur sa purée de panais</p><span><b>35€</b></span>
-                            </div>
-                            <div class="menu__item item">
-                                <p class="menu__text-item"><b>Filet de Turbot</b><br/>Aux agrumes</p><span><b>44€</b></span>
-                            </div>
-
 
                         </div>
-                        <div>
-                            <p class="menu__subtitle">DESSERTS</p>
 
-                            <div class="menu__box-line ">
+                        <div class="menu-list">
+                            <!--block = 'son élément__subtitle' + 'block-indépendant' + 'son élément__box-item = 3*__item'-->
+
+                            <p class="menu-list__subtitle">DESSERTS</p>
+
+                            <div class="box-line ">
                                 <div class="line line_colour"></div>
                             </div>
+                            <div class="menu-list__box-item">
+                                <div class="menu-list__item item">
+                                    <p class="menu-list__text-item"><b>Paris-Brest</b><br/>Revisité</p><span><b>18€</b></span>
+                                </div>
+                                <div class="menu-list__item item">
+                                    <p class="menu-list__text-item"><b>Macaron au chocolat d'exception</b><br/>Et glace à la vanille de Madagascar</p><span><b>22€</b></span>
+                                </div>
+                                <div class="menu-list__item item">
+                                    <p class="menu-list__text-item"><b>Mousse au chocolat</b><br/>Au piment d'espelette et à la truffe noire</p><span><b>23€</b></span>
+                                </div>
+                            </div>
 
-                            <div class="menu__item item">
-                                <p class="menu__text-item"><b>Paris-Brest</b><br/>Revisité</p><span><b>18€</b></span>
-                            </div>
-                            <div class="menu__item item">
-                                <p class="menu__text-item"><b>Macaron au chocolat d'exception</b><br/>Et glace à la vanille de Madagascar</p><span><b>22€</b></span>
-                            </div>
-                            <div class="menu__item item">
-                                <p class="menu__text-item"><b>Mousse au chocolat</b><br/>Au piment d'espelette et à la truffe noire</p><span><b>23€</b></span>
-                            </div>
+
 
                         </div>
 
