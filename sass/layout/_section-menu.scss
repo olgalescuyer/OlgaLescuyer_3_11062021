@@ -1,6 +1,7 @@
 .menu {
     @media (min-width: $screen-sm) {
         max-width: 576px;
+        background-color: aquamarine;
     }
     &__heading {
         @include head-title-cursive;
@@ -99,4 +100,12 @@
     font-size: 1.2em;
     transition: all 1000ms ease-in-out;
     opacity: 0;
+}
+
+.menu__wrapper {
+    @media (min-width: $screen-sm) {
+        max-width: 576px;
+    }
+    padding: 0 15px;
+    background-color: $colour-background-lighter;
 }

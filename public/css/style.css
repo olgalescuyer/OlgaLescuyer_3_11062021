@@ -54,16 +54,6 @@ button {
   }
 }
 
-.menu__wrapper {
-  padding: 0 15px;
-  background-color: #f6f6f6;
-}
-@media (min-width: 576px) {
-  .menu__wrapper {
-    max-width: 576px;
-  }
-}
-
 @media (min-width: 576px) {
   .header {
     max-width: 576px;
@@ -238,6 +228,7 @@ button {
 @media (min-width: 576px) {
   .menu {
     max-width: 576px;
+    background-color: aquamarine;
   }
 }
 .menu__heading {
@@ -334,6 +325,16 @@ button {
   font-size: 1.2em;
   transition: all 1000ms ease-in-out;
   opacity: 0;
+}
+
+.menu__wrapper {
+  padding: 0 15px;
+  background-color: #f6f6f6;
+}
+@media (min-width: 576px) {
+  .menu__wrapper {
+    max-width: 576px;
+  }
 }
 
 .btn-form {

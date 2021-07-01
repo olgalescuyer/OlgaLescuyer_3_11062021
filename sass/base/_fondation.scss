@@ -12,3 +12,14 @@ button {
 .link-block {
     display: block;
 }
+
+.main-wrapper {
+    @media (min-width: $screen-sm) {
+        max-width: 576px;
+    }
+    max-width: 576px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
