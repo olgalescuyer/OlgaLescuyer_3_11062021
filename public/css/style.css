@@ -1,17 +1,451 @@
-/* Error: Can't find stylesheet to import.
- *    ,
- * 13 | @import "./layout/form";
- *    |         ^^^^^^^^^^^^^^^
- *    '
- *   sass\main.scss 13:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a    \2577 \a 13 \2502  @import \"./layout/form\";\d\a    \2502          ^^^^^^^^^^^^^^^\a    \2575 \a   sass\\main.scss 13:9  root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Shrikhand&display=swap");
+li,
+ul {
+  list-style: none;
+  padding: 0;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body,
+p,
+h1,
+h2 {
+  margin: 0;
+}
+
+.titre {
+  margin: 0;
+}
+
+button {
+  border: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+button {
+  font-family: "Roboto";
+  background-color: white;
+  font-size: 1em;
+}
+
+.link {
+  display: block;
+}
+
+.main-wrapper {
+  max-width: 576px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.menu__wrapper {
+  padding: 0 15px;
+  background-color: #f6f6f6;
+}
+
+@media (min-width: 576px) {
+  .header {
+    max-width: 576px;
+  }
+}
+.header__container {
+  width: 100%;
+  max-width: 576px;
+  position: fixed;
+  z-index: 1000;
+  background-color: white;
+}
+.header__link {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media (min-width: 576px) {
+  .footer {
+    max-width: 576px;
+  }
+}
+.footer__container {
+  max-width: 575px;
+  background-color: #353535;
+  padding: 0 20px 26px;
+  margin: 0;
+}
+.footer__logo {
+  width: 35%;
+  padding: 28px 0 20px;
+}
+
+.search {
+  background-color: #f6f6f6;
+}
+.search__geo {
+  background-color: #eaeaea;
+  box-shadow: inset 1px 17px 7px -16px gray;
+  margin-top: 17%;
+}
+.search__title {
+  margin: 0;
+  padding-bottom: 58px;
+}
+.search__box-title {
+  margin: 0;
+  padding: 40px 30px 30px 30px;
+}
+
+.fonction__container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.fonction__item {
+  border-radius: 20px;
+  min-height: 68px;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px 0 gray;
+  font-weight: bold;
+  margin-bottom: 23px;
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  transition: transform 800ms ease-in-out;
+}
+.fonction__item:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+  color: #9356DC;
+}
+.fonction__item:hover::after {
+  opacity: 1;
+}
+.fonction__item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+  border-radius: 5em;
+  border-radius: 20px;
+  background: radial-gradient(ellipse, white 0%, #d9baff 100%);
+  transition: opacity 1000ms;
+}
+.fonction__item:hover > .fa-hover {
+  color: #9356DC;
+}
+
+.content__container {
+  padding: 0 20px 65px;
+  background-color: #f6f6f6;
+}
+
+.content__element {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  min-height: 252px;
+  border-radius: 10px;
+  margin-bottom: 17px;
+  box-shadow: 1px 1px 10px 0 gray;
+}
+
+.menu__heading {
+  font-family: "Shrikhand";
+  font-size: 1.2em;
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 22px 5px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  width: 100%;
+}
+.menu__item {
+  border-radius: 20px;
+  min-height: 68px;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px 0 gray;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 0 11px;
+  margin: 15px 0;
+  background-color: white;
+}
+.menu__item:hover > .menu__checked-item {
+  animation-name: checked;
+  animation-duration: 1s;
+  animation-direction: reverse;
+  animation-fill-mode: forwards;
+}
+.menu__item:hover > .menu__checked-item > .fa-check-circle {
+  transform: rotate(-360deg);
+  opacity: 1;
+}
+.menu__item:active > .menu__checked-item {
+  animation-fill-mode: forwards;
+}
+.menu__checked-item {
+  background-color: #99E2D0;
+  min-height: 68px;
+  width: 70px;
+  position: absolute;
+  left: 43%;
+  opacity: 0;
+  overflow: hidden;
+  z-index: 1;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu__image {
+  min-height: 350px;
+  margin-top: 60px;
+  display: flex;
+  align-items: flex-end;
+}
+
+@keyframes checked {
+  0% {
+    transform: scaleX(1);
+    opacity: 1;
+    left: 39%;
+  }
+  10% {
+    border-radius: 0;
+  }
+  50% {
+    border-radius: 0;
+  }
+  100% {
+    transform: scaleX(0);
+    border-radius: 0;
+    left: 43%;
+    opacity: 1;
+  }
+}
+.fa-check-circle {
+  transition: all 1000ms ease-in-out;
+  opacity: 0;
+}
+
+.menu__btn-form {
+  padding: 37px 0 58px;
+}
+
+.btn-form {
+  display: flex;
+  justify-content: space-around;
+}
+
+.fonction__head-title {
+  padding: 50px 0 27px;
+}
+
+.title {
+  padding: 0 24px;
+  text-align: center;
+}
+
+.head-title {
+  padding: 50px 0 27px;
+  margin: 0;
+}
+
+.menu__subtitle {
+  padding-top: 25px;
+}
+
+.header__logo {
+  width: 43%;
+  padding: 20px 0 18px;
+}
+
+.footer__text {
+  color: white;
+  line-height: 1.5em;
+}
+
+.geo__text {
+  display: block;
+  text-align: center;
+  padding: 17px 80px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: gray;
+}
+
+.text {
+  text-align: center;
+}
+
+.fonction__text {
+  text-align: left;
+  min-width: 191px;
+}
+
+.content__text-element {
+  width: 100%;
+  background-color: white;
+  margin-top: 30%;
+  padding: 15px;
+  text-align: left;
+  line-height: 1.5em;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__text-item {
+  line-height: 1.5em;
+  font-size: 0.9em;
+}
+
+.btn__text {
+  margin: 0;
+  font-size: 0.8em;
+}
+
+.fa-map-marker-alt {
+  color: black;
+  padding-right: 1.1em;
+}
+
+.fa-mobile-alt,
+.fa-list-ul,
+.fa-store {
+  color: gray;
+}
+
+.fa-heart {
+  font-size: 1.4em;
+}
+
+.fa-heart:hover {
+  color: #9356DC;
+  font-weight: bolder;
+}
+
+.fa-utensils,
+.fa-hands-helping {
+  margin-right: 1em;
+}
+
+.fa-hands-helping {
+  font-size: 0.8em;
+}
+
+.fa-check-circle {
+  color: white;
+  font-size: 1.2em;
+}
+
+.sticker {
+  padding: 12px 12px;
+  margin: 15px 15px;
+}
+.sticker_green {
+  background-color: #99E2D0;
+  color: #3d7062;
+}
+.sticker_trans {
+  color: transparent;
+}
+
+.btn {
+  box-shadow: 1px 1px 10px 0 gray;
+  width: 58.45%;
+  border-radius: 5em;
+  padding: 1.1em;
+  cursor: pointer;
+  background-color: #FF79DA;
+  color: white;
+  position: relative;
+  z-index: 1;
+  transition: transform 800ms ease-in-out;
+}
+.btn:hover {
+  transform: scale(1.1);
+}
+.btn:hover::after {
+  opacity: 1;
+}
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+  border-radius: 5em;
+  background: radial-gradient(ellipse, #ff93e1 0%, #782cd3 100%);
+  transition: opacity 1000ms;
+}
+
+.menu__line {
+  height: 2px;
+}
+.menu__line_colour {
+  background-color: #99E2D0;
+}
+.menu__box-line {
+  animation: 3s infinite alternate line;
+}
+
+@keyframes line {
+  0% {
+    width: 10%;
+  }
+  100% {
+    width: 100%;
+    opacity: 0;
+  }
+}
+.image-1 {
+  background: url("../img/restaurants/la-palette-du-gout.jpg") no-repeat;
+  background-size: cover;
+}
+
+.image-2 {
+  background: url("../img/restaurants/la-note-enchantee.jpg") no-repeat;
+  background-size: cover;
+}
+
+.image-3 {
+  background: url("../img/restaurants/a-la-francaise.jpg") no-repeat;
+  background-size: cover;
+}
+
+.image-4 {
+  background: url("../img/restaurants/le-delice-des-sens.jpg") no-repeat;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=style.css.map */
