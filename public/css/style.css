@@ -127,32 +127,13 @@ button {
   padding: 0 24px;
   text-align: center;
 }
+.search__text {
+  text-align: center;
+}
 .search__box-title {
   margin: 0;
   padding: 40px 30px 30px 30px;
   background-color: blueviolet;
-}
-
-.search__text {
-  text-align: center;
-}
-
-.geo {
-  background-color: #eaeaea;
-  box-shadow: inset 1px 17px 7px -16px gray;
-  margin-top: 17%;
-}
-.geo__text {
-  display: block;
-  text-align: center;
-  padding: 17px 80px;
-  font-size: 1.1em;
-  font-weight: bold;
-  color: gray;
-}
-.geo__icon {
-  color: black;
-  padding-right: 1.1em;
 }
 
 @media (min-width: 576px) {
@@ -449,6 +430,24 @@ button {
 .image-4 {
   background: url("../img/restaurants/le-delice-des-sens.jpg") no-repeat;
   background-size: cover;
+}
+
+.geo {
+  background-color: #eaeaea;
+  box-shadow: inset 1px 17px 7px -16px gray;
+  margin-top: 17%;
+}
+.geo__text {
+  display: block;
+  text-align: center;
+  padding: 17px 80px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: gray;
+}
+.geo__icon {
+  color: black;
+  padding-right: 1.1em;
 }
 
 /*# sourceMappingURL=style.css.map */
