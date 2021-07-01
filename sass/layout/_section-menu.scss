@@ -58,11 +58,6 @@
                 }
             }
         }
-        &:active {
-            &>.menu__checked-item {
-                animation-fill-mode: forwards;
-            }
-        }
     }
     &__checked-item {
         background-color: $colour-tertiary;

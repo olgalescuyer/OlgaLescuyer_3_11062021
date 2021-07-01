@@ -10,13 +10,13 @@ button {
     margin: 0;
 }
 
-.link-block {
-    display: block;
-}
-
 .main-wrapper {
     min-height: 100%;
     display: flex;
     flex-direction: column;
     overflow: hidden;
+}
+
+.link-block {
+    display: block;
 }

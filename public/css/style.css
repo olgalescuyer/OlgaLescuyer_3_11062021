@@ -38,15 +38,15 @@ button {
   margin: 0;
 }
 
-.link-block {
-  display: block;
-}
-
 .main-wrapper {
   min-height: 100%;
   display: flex;
   flex-direction: column;
   overflow: hidden;
+}
+
+.link-block {
+  display: block;
 }
 
 @media (min-width: 576px) {
@@ -280,9 +280,6 @@ button {
 .menu-list__item:hover > .menu-list__checked-item > .menu-list__icon {
   transform: rotate(-360deg);
   opacity: 1;
-}
-.menu-list__item:active > .menu__checked-item {
-  animation-fill-mode: forwards;
 }
 .menu-list__checked-item {
   background-color: #99E2D0;
