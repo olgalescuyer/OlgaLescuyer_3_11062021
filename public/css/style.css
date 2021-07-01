@@ -76,6 +76,10 @@ button {
   z-index: 1000;
   background-color: white;
 }
+.header__logo {
+  width: 43%;
+  padding: 20px 0 18px;
+}
 .header__link {
   display: flex;
   justify-content: space-around;
@@ -96,6 +100,10 @@ button {
 .footer__logo {
   width: 35%;
   padding: 28px 0 20px;
+}
+.footer__text {
+  color: white;
+  line-height: 1.5em;
 }
 
 .search {
@@ -120,6 +128,24 @@ button {
   padding: 40px 30px 30px 30px;
 }
 
+.geo__text {
+  display: block;
+  text-align: center;
+  padding: 17px 80px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: gray;
+}
+
+.search__text {
+  text-align: center;
+}
+
+.search__title {
+  padding: 0 24px;
+  text-align: center;
+}
+
 @media (min-width: 576px) {
   .fonction {
     max-width: 576px;
@@ -129,6 +155,9 @@ button {
   display: flex;
   flex-direction: column;
   padding: 0 20px;
+}
+.fonction__head-title {
+  padding: 50px 0 27px;
 }
 .fonction__item {
   border-radius: 20px;
@@ -171,6 +200,11 @@ button {
   color: #9356DC;
 }
 
+.fonction__text {
+  text-align: left;
+  min-width: 191px;
+}
+
 @media (min-width: 576px) {
   .content {
     max-width: 576px;
@@ -179,6 +213,9 @@ button {
 .content__container {
   padding: 0 20px 65px;
   background-color: #f6f6f6;
+}
+.content__head-title {
+  padding: 50px 0 27px;
 }
 .content__element {
   display: flex;
@@ -189,6 +226,19 @@ button {
   border-radius: 10px;
   margin-bottom: 17px;
   box-shadow: 1px 1px 10px 0 gray;
+}
+.content__text-element {
+  width: 100%;
+  background-color: white;
+  margin-top: 30%;
+  padding: 15px;
+  text-align: left;
+  line-height: 1.5em;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @media (min-width: 576px) {
@@ -283,79 +333,18 @@ button {
   opacity: 0;
 }
 
-.btn-form {
-  display: flex;
-  justify-content: space-around;
-}
-
-.fonction__head-title {
-  padding: 50px 0 27px;
-}
-
-.title {
-  padding: 0 24px;
-  text-align: center;
-}
-
-.head-title {
-  padding: 50px 0 27px;
-  margin: 0;
+.menu__text-item {
+  line-height: 1.5em;
+  font-size: 0.9em;
 }
 
 .menu__subtitle {
   padding-top: 25px;
 }
 
-.header__logo {
-  width: 43%;
-  padding: 20px 0 18px;
-}
-
-.footer__text {
-  color: white;
-  line-height: 1.5em;
-}
-
-.geo__text {
-  display: block;
-  text-align: center;
-  padding: 17px 80px;
-  font-size: 1.1em;
-  font-weight: bold;
-  color: gray;
-}
-
-.text {
-  text-align: center;
-}
-
-.fonction__text {
-  text-align: left;
-  min-width: 191px;
-}
-
-.content__text-element {
-  width: 100%;
-  background-color: white;
-  margin-top: 30%;
-  padding: 15px;
-  text-align: left;
-  line-height: 1.5em;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+.btn-form {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.menu__text-item {
-  line-height: 1.5em;
-  font-size: 0.9em;
-}
-
-.btn__text {
-  margin: 0;
-  font-size: 0.8em;
+  justify-content: space-around;
 }
 
 .fa-map-marker-alt {
@@ -415,6 +404,10 @@ button {
   position: relative;
   z-index: 1;
   transition: transform 800ms ease-in-out;
+}
+.btn__text {
+  margin: 0;
+  font-size: 0.8em;
 }
 .btn:hover {
   transform: scale(1.1);

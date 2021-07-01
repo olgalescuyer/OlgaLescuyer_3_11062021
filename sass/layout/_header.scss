@@ -9,6 +9,10 @@
          z-index: 1000;
          background-color: white;
      }
+     &__logo {
+         width: 43%;
+         padding: 20px 0 18px;
+     }
      &__link {
          display: flex;
          justify-content: space-around;

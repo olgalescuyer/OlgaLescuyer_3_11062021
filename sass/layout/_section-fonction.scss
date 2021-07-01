@@ -7,6 +7,9 @@
         flex-direction: column;
         padding: 0 20px;
     }
+    &__head-title {
+        @include head-title-basic-marge
+    }
     &__item {
         @include item;
         @include shadow;
@@ -37,4 +40,9 @@
     &__item:hover>.fa-hover {
         color: $colour-primary;
     }
+}
+
+.fonction__text {
+    text-align: left;
+    min-width: 191px;
 }

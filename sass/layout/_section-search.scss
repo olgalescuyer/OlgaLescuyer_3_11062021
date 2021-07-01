@@ -17,3 +17,21 @@
         padding: 40px 30px 30px 30px;
     }
 }
+
+.geo__text {
+    display: block;
+    text-align: center;
+    padding: 17px 80px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: $colour-shadow-darker;
+}
+
+.search__text {
+    text-align: center;
+}
+
+.search__title {
+    padding: 0 24px;
+    text-align: center;
+}
