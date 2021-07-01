@@ -37,7 +37,7 @@ button {
   font-size: 1em;
 }
 
-.link {
+.link-block {
   display: block;
 }
 
@@ -361,7 +361,6 @@ button {
 .fa-heart {
   font-size: 1.4em;
 }
-
 .fa-heart:hover {
   color: #9356DC;
   font-weight: bolder;

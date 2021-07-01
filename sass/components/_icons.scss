@@ -1,8 +1,7 @@
 .fa-heart {
     font-size: 1.4em;
-}
-
-.fa-heart:hover {
-    color: $colour-primary;
-    font-weight: bolder;
+    &:hover {
+        color: $colour-primary;
+        font-weight: bolder;
+    }
 }
