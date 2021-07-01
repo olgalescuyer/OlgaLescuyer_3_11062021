@@ -1,6 +1,15 @@
-    .footer__container {
-        max-width: 575px;
-        background-color: $colour-background-darker;
-        padding: 0 20px 26px;
-        margin: 0;
+    .footer {
+        @media (min-width: $screen-sm) {
+            max-width: 576px;
+        }
+        &__container {
+            max-width: 575px;
+            background-color: $colour-background-darker;
+            padding: 0 20px 26px;
+            margin: 0;
+        }
+        &__logo {
+            width: 35%;
+            padding: 28px 0 20px;
+        }
     }
