@@ -10,6 +10,10 @@
     &__head-title {
         @include head-title-basic-marge
     }
+    &__item-text {
+        text-align: left;
+        min-width: 191px;
+    }
     &__item {
         @include item;
         @include shadow;
@@ -37,12 +41,10 @@
             transition: opacity 1000ms;
         }
     }
-    &__item:hover>.fa-hover {
+    &__item:hover>.fonction__icon {
         color: $colour-primary;
     }
-}
-
-.fonction__text {
-    text-align: left;
-    min-width: 191px;
+    &__icon {
+        color: $colour-shadow-darker;
+    }
 }

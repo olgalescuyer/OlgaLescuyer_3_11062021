@@ -13,11 +13,18 @@
         border-top-right-radius: 40px;
         width: 100%;
     }
+    &__subtitle {
+        padding-top: 25px;
+    }
     &__image {
         min-height: 350px;
         margin-top: 60px;
         display: flex;
         align-items: flex-end
+    }
+    &__text-item {
+        line-height: 1.5em;
+        font-size: .9em;
     }
     &__btn-form {
         padding: 37px 0 58px;
@@ -88,15 +95,8 @@
 }
 
 .fa-check-circle {
+    color: white;
+    font-size: 1.2em;
     transition: all 1000ms ease-in-out;
     opacity: 0;
-}
-
-.menu__text-item {
-    line-height: 1.5em;
-    font-size: .9em;
-}
-
-.menu__subtitle {
-    padding-top: 25px;
 }
