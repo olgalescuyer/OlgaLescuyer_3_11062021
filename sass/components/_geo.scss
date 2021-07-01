@@ -1,17 +1,16 @@
 .geo {
     background-color: #eaeaea;
     box-shadow: inset 1px 17px 7px -16px $colour-shadow-darker;
-    margin-top: 17%;
     &__text {
         display: block;
         text-align: center;
         padding: 17px 80px;
         font-size: 1.1em;
         font-weight: bold;
-        color: $colour-shadow-darker;
+        color: #575757;
     }
     &__icon {
-        color: black;
-        padding-right: 1.1em;
+        color: $colour-background-darker;
+        padding-right: 1em;
     }
 }

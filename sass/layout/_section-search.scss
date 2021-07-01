@@ -2,19 +2,23 @@
     @media (min-width: $screen-sm) {
         max-width: 576px;
     }
-    background-color: $colour-background-lighter;
+    &__container {
+        background-color: $colour-background-lighter;
+        margin-top: 18%;
+    }
+    &__box {
+        padding: 45px 20px 55px;
+    }
     &__title {
-        margin: 0;
-        padding-bottom: 58px;
-        padding: 0 24px;
+        padding: 0 24px 27px;
         text-align: center;
     }
     &__text {
         text-align: center;
     }
     &__box-title {
-        margin: 0;
-        padding: 40px 30px 30px 30px;
-        background-color: blueviolet;
+        padding-bottom: 40px;
+        display: flex;
+        flex-direction: column;
     }
 }
