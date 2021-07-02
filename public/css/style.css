@@ -158,7 +158,7 @@ button {
 .fonction__item:hover {
   transform: scale(0.9);
   cursor: pointer;
-  color: #9356DC;
+  color: #9356dc;
 }
 .fonction__item:hover::after {
   opacity: 1;
@@ -178,7 +178,7 @@ button {
   transition: opacity 1000ms;
 }
 .fonction__item:hover > .fonction__icon {
-  color: #9356DC;
+  color: #9356dc;
 }
 .fonction__icon {
   color: gray;
@@ -331,7 +331,7 @@ button {
   font-size: 1.4em;
 }
 .fa-heart:hover {
-  color: #9356DC;
+  color: #9356dc;
   font-weight: bolder;
 }
 
@@ -353,18 +353,18 @@ button {
   border-radius: 5em;
   padding: 1.1em;
   cursor: pointer;
-  background-color: #FF79DA;
+  background: #ff79da;
+  background: linear-gradient(172deg, #ff79da 0%, #9356dc 100%);
   color: white;
   position: relative;
   z-index: 1;
-  transition: transform 800ms ease-in-out;
+  transition: all 1000ms ease-in-out;
 }
 .btn__text {
-  margin: 0;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 .btn:hover {
-  transform: scale(1.1);
+  transform: scale(1.01);
 }
 .btn:hover::after {
   opacity: 1;
@@ -379,8 +379,9 @@ button {
   opacity: 0;
   z-index: -1;
   border-radius: 5em;
-  background: radial-gradient(ellipse, #ff93e1 0%, #782cd3 100%);
-  transition: opacity 1000ms;
+  background: #ff79da;
+  background: linear-gradient(348deg, #ff79da 0%, #9356dc 100%);
+  transition: all 1000ms;
 }
 
 .line {
