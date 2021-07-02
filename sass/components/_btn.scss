@@ -21,6 +21,7 @@
     }
     &::after {
         @include after;
+        border-radius: 5em;
         background: $colour-secondary;
         background: linear-gradient(348deg, $colour-secondary 0%, $colour-primary 100%);
         transition: all 1000ms;
