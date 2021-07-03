@@ -5,7 +5,7 @@
     &__container {
         display: flex;
         flex-direction: column;
-        padding: 56px 20px 0;
+        padding: 56px 20px 0 30px;
     }
     &__head-title {
         @include head-title-basic-marge
@@ -13,6 +13,7 @@
     &__item-text {
         text-align: left;
         min-width: 191px;
+        flex-basis: 60%;
     }
     &__item {
         @include item;
@@ -27,11 +28,13 @@
         z-index: 1;
         transition: transform 800ms ease-in-out;
         &:hover {
-            transform: scale(.9);
+            transform: scale(.99);
             cursor: pointer;
-            color: $colour-primary;
             &::after {
                 opacity: 1;
+            }
+            &>.fonction__icon {
+                color: $colour-primary;
             }
         }
         &::after {
@@ -39,12 +42,23 @@
             border-radius: 20px;
             background: radial-gradient(ellipse, lighten($colour-background-lighter, 5) 0%, darken(#f5edff, 10) 100%);
             transition: opacity 1000ms;
+            opacity: 0;
         }
-    }
-    &__item:hover>.fonction__icon {
-        color: $colour-primary;
     }
     &__icon {
         color: $colour-shadow-darker;
+    }
+    &__circle {
+        background-color: $colour-primary;
+        position: relative;
+        right: 8%;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        color: white;
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

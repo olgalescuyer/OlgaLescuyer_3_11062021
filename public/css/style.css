@@ -136,7 +136,7 @@ button {
 .fonction__container {
   display: flex;
   flex-direction: column;
-  padding: 56px 20px 0;
+  padding: 56px 20px 0 30px;
 }
 .fonction__head-title {
   padding: 0 0 27px;
@@ -144,6 +144,7 @@ button {
 .fonction__item-text {
   text-align: left;
   min-width: 191px;
+  flex-basis: 60%;
 }
 .fonction__item {
   border-radius: 20px;
@@ -161,12 +162,14 @@ button {
   transition: transform 800ms ease-in-out;
 }
 .fonction__item:hover {
-  transform: scale(0.9);
+  transform: scale(0.99);
   cursor: pointer;
-  color: #9356dc;
 }
 .fonction__item:hover::after {
   opacity: 1;
+}
+.fonction__item:hover > .fonction__icon {
+  color: #9356dc;
 }
 .fonction__item::after {
   content: "";
@@ -180,12 +183,23 @@ button {
   border-radius: 20px;
   background: radial-gradient(ellipse, white 0%, #d9baff 100%);
   transition: opacity 1000ms;
-}
-.fonction__item:hover > .fonction__icon {
-  color: #9356dc;
+  opacity: 0;
 }
 .fonction__icon {
   color: gray;
+}
+.fonction__circle {
+  background-color: #9356dc;
+  position: relative;
+  right: 8%;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  color: white;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 576px) {
