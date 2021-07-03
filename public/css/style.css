@@ -44,6 +44,11 @@ button {
   flex-direction: column;
   overflow: hidden;
 }
+@media (min-width: 0) {
+  .main-wrapper {
+    max-width: 576px;
+  }
+}
 
 .link-block {
   display: block;
@@ -158,7 +163,7 @@ button {
 .fonction__item:hover {
   transform: scale(0.9);
   cursor: pointer;
-  color: #9356DC;
+  color: #9356dc;
 }
 .fonction__item:hover::after {
   opacity: 1;
@@ -172,13 +177,12 @@ button {
   left: 0;
   opacity: 0;
   z-index: -1;
-  border-radius: 5em;
   border-radius: 20px;
   background: radial-gradient(ellipse, white 0%, #d9baff 100%);
   transition: opacity 1000ms;
 }
 .fonction__item:hover > .fonction__icon {
-  color: #9356DC;
+  color: #9356dc;
 }
 .fonction__icon {
   color: gray;
@@ -235,6 +239,7 @@ button {
   font-family: "Shrikhand";
   font-size: 1.2em;
   background-color: #f6f6f6;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -257,6 +262,12 @@ button {
 .menu-list__text-item {
   line-height: 1.5em;
   font-size: 0.9em;
+  flex-grow: 3;
+}
+.menu-list__icon {
+  color: white;
+  font-size: 1.2em;
+  transition: all 2000ms ease-in-out;
 }
 .menu-list__item {
   border-radius: 20px;
@@ -265,63 +276,67 @@ button {
   box-shadow: 1px 1px 10px 0 gray;
   overflow: hidden;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0 20px 0 11px;
+  padding: 0 0 0 11px;
   margin: 15px 0;
   background-color: white;
+  animation-name: item-mv;
+  animation-duration: 2000ms;
+  animation-timing-function: ease-in-out;
 }
-.menu-list__item:hover > .menu-list__checked-item {
-  animation-name: checked;
-  animation-duration: 1s;
-  animation-direction: reverse;
-  animation-fill-mode: forwards;
-}
-.menu-list__item:hover > .menu-list__checked-item > .menu-list__icon {
-  transform: rotate(-360deg);
+.menu-list__item:hover > .btn-checked {
+  transform: translateX(-50px);
   opacity: 1;
 }
-.menu-list__checked-item {
-  background-color: #99E2D0;
-  min-height: 68px;
-  width: 70px;
-  position: absolute;
-  left: 43%;
-  opacity: 0;
-  overflow: hidden;
-  z-index: 1;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.menu-list__item:hover > .btn-checked > .menu-list__icon {
+  transform: rotate(-360deg);
 }
-.menu-list__icon {
-  color: white;
-  font-size: 1.2em;
-  transition: all 1000ms ease-in-out;
+.menu-list__item:hover > .prix {
+  transform: translateX(-55px);
+}
+
+@keyframes item-mv {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  17% {
+    transform: translateY(0.18);
+  }
+  24% {
+    transform: translateY(0.4);
+  }
+  46% {
+    transform: translateY(0.81);
+  }
+  85% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(1);
+    opacity: 1;
+  }
+}
+.btn-checked {
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  left: 50px;
+  min-height: 68px;
+  width: 60px;
+  background-color: #99E2D0;
+  transition: all 1000ms;
   opacity: 0;
 }
 
-@keyframes checked {
-  0% {
-    transform: scaleX(1);
-    opacity: 1;
-    left: 39%;
-  }
-  10% {
-    border-radius: 0;
-  }
-  50% {
-    border-radius: 0;
-  }
-  100% {
-    transform: scaleX(0);
-    border-radius: 0;
-    left: 43%;
-    opacity: 1;
-  }
+.prix {
+  position: relative;
+  left: 50px;
+  transition: transform 1s;
 }
+
 .btn-form {
   display: flex;
   justify-content: space-around;
@@ -331,7 +346,7 @@ button {
   font-size: 1.4em;
 }
 .fa-heart:hover {
-  color: #9356DC;
+  color: #9356dc;
   font-weight: bolder;
 }
 
@@ -353,18 +368,18 @@ button {
   border-radius: 5em;
   padding: 1.1em;
   cursor: pointer;
-  background-color: #FF79DA;
+  background: #ff79da;
+  background: linear-gradient(172deg, #ff79da 0%, #9356dc 100%);
   color: white;
   position: relative;
   z-index: 1;
-  transition: transform 800ms ease-in-out;
+  transition: all 1000ms ease-in-out;
 }
 .btn__text {
-  margin: 0;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 .btn:hover {
-  transform: scale(1.1);
+  transform: scale(1.01);
 }
 .btn:hover::after {
   opacity: 1;
@@ -379,8 +394,9 @@ button {
   opacity: 0;
   z-index: -1;
   border-radius: 5em;
-  background: radial-gradient(ellipse, #ff93e1 0%, #782cd3 100%);
-  transition: opacity 1000ms;
+  background: #ff79da;
+  background: linear-gradient(348deg, #ff79da 0%, #9356dc 100%);
+  transition: all 1000ms;
 }
 
 .line {
