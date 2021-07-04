@@ -75,6 +75,12 @@ button {
   justify-content: space-around;
   align-items: center;
 }
+.header__icon {
+  position: absolute;
+  left: 20px;
+  color: #353535;
+  font-size: 1.1em;
+}
 
 @media (min-width: 576px) {
   .footer {
@@ -140,6 +146,8 @@ button {
 }
 .fonction__head-title {
   padding: 0 0 27px;
+  position: relative;
+  right: 10px;
 }
 .fonction__item-text {
   text-align: left;
@@ -277,11 +285,14 @@ button {
   line-height: 1.5em;
   font-size: 0.9em;
   flex-grow: 3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.menu-list__icon {
-  color: white;
-  font-size: 1.2em;
-  transition: all 2000ms ease-in-out;
+.menu-list__price {
+  position: relative;
+  left: 50px;
+  transition: transform 1s;
 }
 .menu-list__item {
   border-radius: 20px;
@@ -294,41 +305,64 @@ button {
   padding: 0 0 0 11px;
   margin: 15px 0;
   background-color: white;
-  animation-name: item-mv;
-  animation-duration: 2000ms;
-  animation-timing-function: ease-in-out;
+  transition: transform;
+  transform-origin: top;
 }
 .menu-list__item:hover > .btn-checked {
   transform: translateX(-50px);
   opacity: 1;
 }
-.menu-list__item:hover > .btn-checked > .menu-list__icon {
+.menu-list__item:hover > .btn-checked > .btn-checked__icon {
   transform: rotate(-360deg);
 }
-.menu-list__item:hover > .prix {
+.menu-list__item:hover > .menu-list__price {
   transform: translateX(-55px);
+}
+.menu-list__item_1 {
+  transition: transform;
+  transform-origin: top;
+  animation-name: item-mv;
+  animation-duration: 1000ms;
+  animation-delay: 200ms;
+  animation-timing-function: ease-in-out;
+}
+.menu-list__item_2 {
+  animation-name: item-mv;
+  animation-duration: 1000ms;
+  animation-delay: 400ms;
+  animation-timing-function: ease-in-out;
+}
+.menu-list__item_3 {
+  animation-name: item-mv;
+  animation-duration: 1000ms;
+  animation-delay: 600ms;
+  animation-timing-function: ease-in-out;
+}
+.menu-list__item_4 {
+  animation-name: item-mv;
+  animation-duration: 1000ms;
+  animation-delay: 800ms;
+  animation-timing-function: ease-in-out;
 }
 
 @keyframes item-mv {
   0% {
-    transform: translateY(0);
     opacity: 0;
+    transform: translateY(-40px);
   }
   17% {
-    transform: translateY(0.18);
-  }
-  24% {
-    transform: translateY(0.4);
+    opacity: 0.2;
   }
   46% {
-    transform: translateY(0.81);
+    opacity: 0.6;
+    transform: translateY(40px);
   }
   85% {
-    opacity: 0.4;
+    opacity: 0.8;
   }
   100% {
-    transform: translateY(1);
     opacity: 1;
+    transform: translateY(0px);
   }
 }
 .btn-checked {
@@ -344,11 +378,10 @@ button {
   transition: all 1000ms;
   opacity: 0;
 }
-
-.prix {
-  position: relative;
-  left: 50px;
-  transition: transform 1s;
+.btn-checked__icon {
+  color: white;
+  font-size: 1.2em;
+  transition: all 2000ms ease-in-out;
 }
 
 .btn-form {
@@ -358,10 +391,7 @@ button {
 
 .fa-heart {
   font-size: 1.4em;
-}
-.fa-heart:hover {
-  color: #9356dc;
-  font-weight: bolder;
+  cursor: pointer;
 }
 
 .sticker {
@@ -389,9 +419,6 @@ button {
   z-index: 1;
   transition: all 1000ms ease-in-out;
 }
-.btn__text {
-  font-size: 0.9em;
-}
 .btn:hover {
   transform: scale(1.01);
 }
@@ -411,6 +438,9 @@ button {
   background: #ff79da;
   background: linear-gradient(348deg, #ff79da 0%, #9356dc 100%);
   transition: all 1000ms;
+}
+.btn__text {
+  font-size: 0.9em;
 }
 
 .line {

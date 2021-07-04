@@ -37,11 +37,14 @@
         line-height: 1.5em;
         font-size: .9em;
         flex-grow: 3;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
-    &__icon {
-        color: white;
-        font-size: 1.2em;
-        transition: all 2000ms ease-in-out;
+    &__price {
+        position: relative;
+        left: 50px;
+        transition: transform 1s;
     }
     &__item {
         @include item;
@@ -52,44 +55,67 @@
         padding: 0 0 0 11px;
         margin: 15px 0;
         background-color: white;
-        animation-name: item-mv;
-        animation-duration: 2000ms;
-        animation-timing-function: ease-in-out;
+        transition: transform;
+        transform-origin: top;
         &:hover {
             &>.btn-checked {
                 transform: translateX(-50px);
                 opacity: 1;
-                &>.menu-list__icon {
+                &>.btn-checked__icon {
                     transform: rotate(-360deg);
                 }
             }
-            &>.prix {
+            &>.menu-list__price {
                 transform: translateX(-55px);
             }
+        }
+        &_1 {
+            transition: transform;
+            transform-origin: top;
+            animation-name: item-mv;
+            animation-duration: 1000ms;
+            animation-delay: 200ms;
+            animation-timing-function: ease-in-out;
+        }
+        &_2 {
+            animation-name: item-mv;
+            animation-duration: 1000ms;
+            animation-delay: 400ms;
+            animation-timing-function: ease-in-out;
+        }
+        &_3 {
+            animation-name: item-mv;
+            animation-duration: 1000ms;
+            animation-delay: 600ms;
+            animation-timing-function: ease-in-out;
+        }
+        &_4 {
+            animation-name: item-mv;
+            animation-duration: 1000ms;
+            animation-delay: 800ms;
+            animation-timing-function: ease-in-out;
         }
     }
 }
 
 @keyframes item-mv {
     0% {
-        transform: translateY(0);
         opacity: 0;
+        transform: translateY(-40px);
     }
     17% {
-        transform: translateY(.18);
-    }
-    24% {
-        transform: translateY(.4);
+        opacity: .2;
     }
     46% {
-        transform: translateY(.81);
+        opacity: .6;
+        transform: translateY(40px);
     }
     85% {
-        opacity: .4;
+        opacity: .8;
     }
     100% {
-        transform: translateY(1);
         opacity: 1;
+        transform: translateY(0px);
     }
 }
 
@@ -105,10 +131,9 @@
     background-color: $colour-tertiary;
     transition: all 1000ms;
     opacity: 0;
-}
-
-.prix {
-    position: relative;
-    left: 50px;
-    transition: transform 1s;
+    &__icon {
+        color: white;
+        font-size: 1.2em;
+        transition: all 2000ms ease-in-out;
+    }
 }
