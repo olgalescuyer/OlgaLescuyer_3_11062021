@@ -75,6 +75,12 @@ button {
   justify-content: space-around;
   align-items: center;
 }
+.header__icon {
+  position: absolute;
+  left: 20px;
+  color: #353535;
+  font-size: 1.1em;
+}
 
 @media (min-width: 576px) {
   .footer {
