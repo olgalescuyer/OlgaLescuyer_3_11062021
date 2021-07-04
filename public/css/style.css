@@ -358,10 +358,7 @@ button {
 
 .fa-heart {
   font-size: 1.4em;
-}
-.fa-heart:hover {
-  color: #9356dc;
-  font-weight: bolder;
+  cursor: pointer;
 }
 
 .sticker {
@@ -389,9 +386,6 @@ button {
   z-index: 1;
   transition: all 1000ms ease-in-out;
 }
-.btn__text {
-  font-size: 0.9em;
-}
 .btn:hover {
   transform: scale(1.01);
 }
@@ -411,6 +405,9 @@ button {
   background: #ff79da;
   background: linear-gradient(348deg, #ff79da 0%, #9356dc 100%);
   transition: all 1000ms;
+}
+.btn__text {
+  font-size: 0.9em;
 }
 
 .line {
