@@ -140,6 +140,8 @@ button {
 }
 .fonction__head-title {
   padding: 0 0 27px;
+  position: relative;
+  right: 10px;
 }
 .fonction__item-text {
   text-align: left;
