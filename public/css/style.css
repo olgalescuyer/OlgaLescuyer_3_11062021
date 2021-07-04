@@ -277,6 +277,9 @@ button {
   line-height: 1.5em;
   font-size: 0.9em;
   flex-grow: 3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu-list__price {
   position: relative;
@@ -294,9 +297,8 @@ button {
   padding: 0 0 0 11px;
   margin: 15px 0;
   background-color: white;
-  animation-name: item-mv;
-  animation-duration: 2000ms;
-  animation-timing-function: ease-in-out;
+  transition: transform;
+  transform-origin: top;
 }
 .menu-list__item:hover > .btn-checked {
   transform: translateX(-50px);
@@ -308,27 +310,51 @@ button {
 .menu-list__item:hover > .menu-list__price {
   transform: translateX(-55px);
 }
+.menu-list__item_1 {
+  transition: transform;
+  transform-origin: top;
+  animation-name: item-mv;
+  animation-duration: 1000ms;
+  animation-delay: 200ms;
+  animation-timing-function: ease-in-out;
+}
+.menu-list__item_2 {
+  animation-name: item-mv;
+  animation-duration: 1000ms;
+  animation-delay: 400ms;
+  animation-timing-function: ease-in-out;
+}
+.menu-list__item_3 {
+  animation-name: item-mv;
+  animation-duration: 1000ms;
+  animation-delay: 600ms;
+  animation-timing-function: ease-in-out;
+}
+.menu-list__item_4 {
+  animation-name: item-mv;
+  animation-duration: 1000ms;
+  animation-delay: 800ms;
+  animation-timing-function: ease-in-out;
+}
 
 @keyframes item-mv {
   0% {
-    transform: translateY(0);
     opacity: 0;
+    transform: translateY(-40px);
   }
   17% {
-    transform: translateY(0.18);
-  }
-  24% {
-    transform: translateY(0.4);
+    opacity: 0.2;
   }
   46% {
-    transform: translateY(0.81);
+    opacity: 0.6;
+    transform: translateY(40px);
   }
   85% {
-    opacity: 0.4;
+    opacity: 0.8;
   }
   100% {
-    transform: translateY(1);
     opacity: 1;
+    transform: translateY(0px);
   }
 }
 .btn-checked {
