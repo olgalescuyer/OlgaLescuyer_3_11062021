@@ -278,10 +278,10 @@ button {
   font-size: 0.9em;
   flex-grow: 3;
 }
-.menu-list__icon {
-  color: white;
-  font-size: 1.2em;
-  transition: all 2000ms ease-in-out;
+.menu-list__price {
+  position: relative;
+  left: 50px;
+  transition: transform 1s;
 }
 .menu-list__item {
   border-radius: 20px;
@@ -302,10 +302,10 @@ button {
   transform: translateX(-50px);
   opacity: 1;
 }
-.menu-list__item:hover > .btn-checked > .menu-list__icon {
+.menu-list__item:hover > .btn-checked > .btn-checked__icon {
   transform: rotate(-360deg);
 }
-.menu-list__item:hover > .prix {
+.menu-list__item:hover > .menu-list__price {
   transform: translateX(-55px);
 }
 
@@ -344,11 +344,10 @@ button {
   transition: all 1000ms;
   opacity: 0;
 }
-
-.prix {
-  position: relative;
-  left: 50px;
-  transition: transform 1s;
+.btn-checked__icon {
+  color: white;
+  font-size: 1.2em;
+  transition: all 2000ms ease-in-out;
 }
 
 .btn-form {
