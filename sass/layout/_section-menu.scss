@@ -2,10 +2,16 @@
     @media (min-width: $screen-xs) {
         max-width: 576px;
     }
-    @media (min-width: $screen-sm) and (max-width: 991.98px) {
-        max-width: 991px;
+    @media (min-width: $screen-sm) and (max-width: 1440px) {
+        max-width: 1440px;
         &__image {
             margin-top: 0;
+        }
+        &__box-list {
+            display: flex;
+        }
+        &__menu-list {
+            flex: 33%;
         }
     }
     &__image {
