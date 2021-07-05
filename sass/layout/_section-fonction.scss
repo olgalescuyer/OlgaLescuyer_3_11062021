@@ -1,66 +1,74 @@
-.fonction {
-    @media (min-width: $screen-sm) {
-        max-width: 576px;
-    }
-    &__container {
-        display: flex;
-        flex-direction: column;
-        padding: 56px 20px 0 30px;
-    }
-    &__head-title {
-        @include head-title-basic-marge;
-        position: relative;
-        right: 10px;
-    }
-    &__item-text {
-        text-align: left;
-        min-width: 191px;
-        flex-basis: 60%;
-    }
-    &__item {
-        @include item;
-        @include shadow;
-        font-weight: bold;
-        margin-bottom: 23px;
-        background-color: $colour-background-lighter;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        position: relative;
-        z-index: 1;
-        transition: transform 800ms ease-in-out;
-        &:hover {
-            transform: scale(.99);
-            cursor: pointer;
+    .fonction {
+        @media (min-width: $screen-xs) {
+            max-width: 576px;
+        }
+        &__container {
+            display: flex;
+            flex-direction: column;
+            padding: 56px 20px 0 30px;
+        }
+        &__head-title {
+            @include head-title-basic-marge;
+            position: relative;
+            right: 10px;
+        }
+        &__item-text {
+            text-align: left;
+            min-width: 191px;
+            flex-basis: 60%;
+        }
+        &__item {
+            @include item;
+            @include shadow;
+            font-weight: bold;
+            margin-bottom: 23px;
+            background-color: $colour-background-lighter;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+            transition: transform 800ms ease-in-out;
+            &:hover {
+                transform: scale(.99);
+                cursor: pointer;
+                &::after {
+                    opacity: 1;
+                }
+                &>.fonction__icon {
+                    color: $colour-primary;
+                }
+            }
             &::after {
-                opacity: 1;
-            }
-            &>.fonction__icon {
-                color: $colour-primary;
+                @include after;
+                border-radius: 20px;
+                background: radial-gradient(ellipse, lighten($colour-background-lighter, 5) 0%, darken(#f5edff, 10) 100%);
+                transition: opacity 1000ms;
+                opacity: 0;
             }
         }
-        &::after {
-            @include after;
-            border-radius: 20px;
-            background: radial-gradient(ellipse, lighten($colour-background-lighter, 5) 0%, darken(#f5edff, 10) 100%);
-            transition: opacity 1000ms;
-            opacity: 0;
+        &__icon {
+            color: $colour-shadow-darker;
+        }
+        &__circle {
+            background-color: $colour-primary;
+            position: relative;
+            right: 8%;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            color: white;
+            display: block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @media (min-width: $screen-sm) and (max-width: 1440px) {
+            max-width: 1440px;
+            &__box-item {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
         }
     }
-    &__icon {
-        color: $colour-shadow-darker;
-    }
-    &__circle {
-        background-color: $colour-primary;
-        position: relative;
-        right: 8%;
-        width: 24px;
-        height: 24px;
-        border-radius: 50%;
-        color: white;
-        display: block;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}

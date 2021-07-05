@@ -2,6 +2,12 @@
     @media (min-width: $screen-xs) {
         max-width: 576px;
     }
+    @media (min-width: $screen-sm) and (max-width: 991.98px) {
+        max-width: 991px;
+        &__image {
+            margin-top: 0;
+        }
+    }
     &__image {
         min-height: 350px;
         margin-top: 60px;
