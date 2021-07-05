@@ -394,6 +394,10 @@ button {
   cursor: pointer;
 }
 
+.fa-mobile-alt {
+  font-size: 1.2em;
+}
+
 .sticker {
   padding: 12px 12px;
   margin: 15px 15px;
