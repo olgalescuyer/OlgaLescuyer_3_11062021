@@ -2,21 +2,21 @@
     @media (min-width: $screen-xs) {
         max-width: 576px;
     }
-    @media (min-width: $screen-sm) and (max-width: 1440px) {
+    @media (min-width: $screen-sm) and (max-width: 991px) {
+        max-width: 991px;
+    }
+    @media (min-width: 992px) and (max-width: 1440px) {
         max-width: 1440px;
-        &__image {
-            margin-top: 0;
-        }
         &__box-list {
             display: flex;
+            justify-content: space-between;
         }
-        &__menu-list {
-            flex: 33%;
+        .menu-list {
+            flex: 30%;
         }
     }
     &__image {
         min-height: 350px;
-        margin-top: 60px;
         display: flex;
         align-items: flex-end
     }
