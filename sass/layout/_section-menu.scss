@@ -59,6 +59,13 @@
             left: 50px;
             transition: transform 1s;
         }
+        &__box-item {
+            &:hover {
+                &~.line {
+                    animation: 3s infinite alternate line;
+                }
+            }
+        }
         &__item {
             @include item;
             @include shadow;

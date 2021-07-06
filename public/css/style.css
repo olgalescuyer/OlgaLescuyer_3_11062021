@@ -428,6 +428,9 @@ button {
   left: 50px;
   transition: transform 1s;
 }
+.menu-list__box-item:hover ~ .line {
+  animation: 3s infinite alternate line;
+}
 .menu-list__item {
   border-radius: 20px;
   min-height: 68px;
@@ -582,6 +585,8 @@ button {
 
 .line {
   height: 2px;
+  width: 100%;
+  transform-origin: left;
   animation: 3s infinite alternate line;
 }
 .line_colour {
@@ -590,10 +595,10 @@ button {
 
 @keyframes line {
   0% {
-    width: 10%;
+    transform: scaleX(10%);
   }
   100% {
-    width: 100%;
+    transform: scaleX(100%);
     opacity: 0;
   }
 }
