@@ -374,9 +374,11 @@ button {
   .menu__box-list {
     display: flex;
     justify-content: space-between;
+    width: 100%;
   }
   .menu .menu-list {
-    flex: 30%;
+    padding: 0 10px;
+    width: 33%;
   }
 }
 .menu__image {
@@ -395,7 +397,6 @@ button {
   padding: 30px 22px 5px;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  width: 100%;
 }
 .menu__box-list {
   padding: 0 15px;
@@ -492,7 +493,6 @@ button {
   }
 }
 .btn-checked {
-  display: block;
   display: flex;
   align-items: center;
   justify-content: space-around;
