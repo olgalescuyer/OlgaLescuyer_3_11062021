@@ -207,9 +207,24 @@ button {
   }
 }
 
-@media (min-width: 0) {
+@media (min-width: 0) and (max-width: 991px) {
   .fonction {
+    max-width: 991px;
+  }
+  .fonction__container {
     max-width: 576px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 992px) and (max-width: 1440px) {
+  .fonction {
+    max-width: 1440px;
+  }
+  .fonction__box-item {
+    display: flex;
+  }
+  .fonction__item {
+    margin-right: 20px;
   }
 }
 .fonction__container {
@@ -226,16 +241,13 @@ button {
   text-align: left;
   min-width: 191px;
   flex-basis: 60%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .fonction__item {
   border-radius: 20px;
   min-height: 68px;
   cursor: pointer;
   box-shadow: 1px 1px 10px 0 gray;
-  max-width: 320px;
+  width: 100%;
   font-weight: bold;
   margin-bottom: 23px;
   background-color: #f6f6f6;
@@ -285,11 +297,6 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-@media (min-width: 576px) and (max-width: 991px) {
-  .fonction {
-    max-width: 991px;
-  }
 }
 
 @media (min-width: 0) {

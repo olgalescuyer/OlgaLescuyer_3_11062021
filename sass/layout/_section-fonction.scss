@@ -1,6 +1,19 @@
     .fonction {
-        @media (min-width: $screen-xs) {
-            max-width: 576px;
+        @media (min-width: $screen-xs) and (max-width: 991px) {
+            max-width: 991px;
+            &__container {
+                max-width: 576px;
+                margin: 0 auto;
+            }
+        }
+        @media (min-width: 992px) and (max-width: 1440px) {
+            max-width: 1440px;
+            &__box-item {
+                display: flex;
+            }
+            &__item {
+                margin-right: 20px;
+            }
         }
         &__container {
             display: flex;
@@ -16,14 +29,11 @@
             text-align: left;
             min-width: 191px;
             flex-basis: 60%;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
         }
         &__item {
             @include item;
             @include shadow;
-            max-width: 320px;
+            width: 100%;
             font-weight: bold;
             margin-bottom: 23px;
             background-color: $colour-background-lighter;
@@ -66,8 +76,5 @@
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-        @media (min-width: 576px) and (max-width: 991px) {
-            max-width: 991px;
         }
     }
