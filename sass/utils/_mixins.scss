@@ -10,7 +10,7 @@
 }
 
 @mixin shadow {
-    box-shadow: 1px 1px 10px 0 $colour-shadow-darker;
+    box-shadow: 10px 10px 29px -5px$colour-shadow-darker;
 }
 
 @mixin after {

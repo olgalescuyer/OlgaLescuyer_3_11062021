@@ -1,5 +1,7 @@
    .line {
        height: 2px;
+       width: 100%;
+       transform-origin: left;
        animation: 3s infinite alternate line;
        &_colour {
            background-color: $colour-tertiary;
@@ -8,10 +10,10 @@
    
    @keyframes line {
        0% {
-           width: 10%;
+           transform: scaleX(10%);
        }
        100% {
-           width: 100%;
+           transform: scaleX(100%);
            opacity: 0;
        }
    }

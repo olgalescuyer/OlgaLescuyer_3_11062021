@@ -20,7 +20,7 @@
                 <a href="index.html" class="link-block header__link">
 
                     <span class="header__icon"><i class="fas fa-arrow-left"></i></span>
-                    <img src="./public/img/interface/ohmyfood.png" alt="ohmyfood" title="home" class="header__logo" />
+                    <h1 class="header__title">ohmyfood</h1>
 
                 </a>
             </div>
@@ -41,7 +41,7 @@
 
                         <div class="menu__heading">
 
-                            <h1>La palette du goût</h1>
+                            <h2>La palette du goût</h2>
                             <i class="far fa-heart"></i>
 
                         </div>
@@ -56,10 +56,10 @@
 
                             <p class="menu-list__subtitle">ENTREES</p>
 
-                            <div class="box-line ">
-                                <!--block-indépendant = _component dans le sass-->
-                                <div class="line line_colour"></div>
-                            </div>
+
+                            <!--block-indépendant = _component dans le sass-->
+                            <div class="line line_colour"></div>
+
 
                             <div class="menu-list__box-item">
                                 <!--élément = 3*item-->
@@ -126,9 +126,9 @@
                                     <span class="btn-checked"><i class="fas fa-check-circle btn-checked__icon"></i></span>
                                 </div>
 
-                                <div class="menu-list__item item">
+                                <div class="menu-list__item item menu-list__item_4">
 
-                                    <p class="menu-list__text-item menu-list__item_4"><b>Filet de Turbot</b><br/>Aux agrumes</p>
+                                    <p class="menu-list__text-item "><b>Filet de Turbot</b><br/>Aux agrumes</p>
                                     <span class="menu-list__price"><b>44€</b></span>
                                     <span class="btn-checked"><i class="fas fa-check-circle btn-checked__icon"></i></span>
 
@@ -176,11 +176,10 @@
 
                         </div>
 
-                        <form class="btn-form menu__btn-form">
-                            <button class="btn btn-text">Commander</button>
-                        </form>
-
                     </div>
+                    <form class="btn-form menu__btn-form">
+                        <button class="btn btn-text">Commander</button>
+                    </form>
 
                 </div>
 
@@ -193,12 +192,14 @@
 
         <ul class="footer__container">
             <li>
-                <a href="index.html" class="link-block"><img src="./public/img/interface/ohmyfood@2x.svg" alt="logo OhMyFood" class="footer__logo" /></a>
+                <a href="index.html" class="link-block">
+                    <p class="footer__title">ohmyfood</p>
+                </a>
             </li>
             <li><a href="#" class="link-block footer__text"><i class="fas fa-utensils footer__icon"></i>Proposer un restaurant</a></li>
             <li><a href="#" class="link-block footer__text"><i class="fas fa-hands-helping footer__icon"></i>Devenir partenaire</a></li>
             <li><a href="#" class="link-block footer__text">Mentions légales</a></li>
-            <li><a href="mailto:xxx@yz.org" class="link-block footer__text">Contact</a></li>
+            <li><a href="mailto:contact@ohmyfood.org" class="link-block footer__text">Contact</a></li>
         </ul>
 
     </footer>

@@ -1,6 +1,6 @@
 .btn {
     @include shadow;
-    width: 58.45%;
+    min-width: 200px;
     border-radius: 5em;
     padding: 1.1em;
     cursor: pointer;

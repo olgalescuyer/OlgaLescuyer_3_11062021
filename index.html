@@ -11,12 +11,15 @@
 </head>
 
 <body>
+
     <div class="main-wrapper">
 
         <header class="header">
 
             <div class="header__container">
-                <a href="index.html" class="link-block header__link"><img src="./public/img/interface/ohmyfood.png" alt="ohmyfood" title="home" class="header__logo" /></a>
+                <a href="index.html" class="link-block header__link">
+                    <h1 class="header__title">ohmyfood</h1>
+                </a>
             </div>
 
         </header>
@@ -36,12 +39,12 @@
                     <div class="search__box">
 
                         <div class="search__box-title">
-                            <h1 class="search__title">Réservez le menu qui vous convient</h1>
+                            <h2 class="search__title">Réservez le menu qui vous convient</h2>
                             <p class="search__text">Découvrez des restaurants d'exeption, séléctionnés par nos soins.</p>
                         </div>
 
-                        <form action="#content-page" class="btn-form">
-                            <button class="btn btn__text">Explorer nos restaurants</button>
+                        <form action="#content-page" class="btn-form search__btn-form">
+                            <button class="btn btn__text ">Explorer nos restaurants</button>
                         </form>
 
                     </div>
@@ -93,50 +96,55 @@
 
                     <h2 class="content__head-title">Restaurants</h2>
 
-                    <div>
+                    <div class="content__block-image">
 
-                        <a href="la-palette-du-gout.html" class="link-block">
-                            <div class="image-1 content__element">
+                        <div class="content__block-left">
 
-                                <p class="sticker sticker_green">Nouveau</p>
+                            <a href="la-palette-du-gout.html" class="link-block content__block">
+                                <div class="image-1 content__element">
 
-                                <div class="content__text-element">
-                                    <p><b>La palette du goût</b><br/>Ménilmontant</p><button class="test"><i class="far fa-heart"></i></button>
+                                    <p class="sticker sticker_green">Nouveau</p>
+
+                                    <div class="content__text-element">
+                                        <p><b>La palette du goût</b><br/>Ménilmontant</p><button class="test"><i class="far fa-heart"></i></button>
+                                    </div>
+
                                 </div>
+                            </a>
 
-                            </div>
-                        </a>
+                            <a href="la-note-enchantee.html" class="link-block content__block">
+                                <div class="image-2 content__element">
+                                    <p class="sticker sticker_green">Nouveau</p>
+                                    <div class="content__text-element">
+                                        <p><b>La note enchantée</b><br/>Charonne</p><i class="far fa-heart"></i>
+                                    </div>
 
-                        <a href="la-note-enchantee.html" class="link-block">
-                            <div class="image-2 content__element">
-                                <p class="sticker sticker_green">Nouveau</p>
-                                <div class="content__text-element">
-                                    <p><b>La note enchantée</b><br/>Charonne</p><i class="far fa-heart"></i>
                                 </div>
+                            </a>
+                        </div>
 
-                            </div>
-                        </a>
+                        <div class="content__block-right">
 
-                        <a href="a-la-francaise.html" class="link-block">
-                            <div class="image-3 content__element">
-                                <p class="sticker sticker_trans">Nouveau</p>
-                                <div class="content__text-element">
-                                    <p><b>A la française</b><br/>Cité Rouge</p><i class="far fa-heart"></i>
+                            <a href="a-la-francaise.html" class="link-block content__block">
+                                <div class="image-3 content__element">
+                                    <p class="sticker sticker_trans">Nouveau</p>
+                                    <div class="content__text-element">
+                                        <p><b>A la française</b><br/>Cité Rouge</p><i class="far fa-heart"></i>
+                                    </div>
+
                                 </div>
+                            </a>
 
-                            </div>
-                        </a>
+                            <a href="le-delice-des-sens.html" class="link-block content__block">
+                                <div class="image-4 content__element">
+                                    <p class="sticker sticker_trans">Nouveau</p>
+                                    <div class="content__text-element">
+                                        <p><b>Le delice des sens</b><br/>Folie-Méricourt</p><i class="far fa-heart"></i>
+                                    </div>
 
-                        <a href="le-delice-des-sens.html" class="link-block">
-                            <div class="image-4 content__element">
-                                <p class="sticker sticker_trans">Nouveau</p>
-                                <div class="content__text-element">
-                                    <p><b>Le delice des sens</b><br/>Folie-Méricourt</p><i class="far fa-heart"></i>
                                 </div>
-
-                            </div>
-                        </a>
-
+                            </a>
+                        </div>
 
                     </div>
 
@@ -150,12 +158,14 @@
     <footer class="footer">
         <ul class="footer__container">
             <li>
-                <a href="index.html" class="link-block"><img src="./public/img/interface/ohmyfood@2x.svg" alt="logo OhMyFood" class="footer__logo" /></a>
+                <a href="index.html" class="link-block">
+                    <p class="footer__title">ohmyfood</p>
+                </a>
             </li>
             <li><a href="#" class="link-block footer__text"><i class="fas fa-utensils footer__icon"></i>Proposer un restaurant</a></li>
             <li><a href="#" class="link-block footer__text"><i class="fas fa-hands-helping footer__icon"></i>Devenir partenaire</a></li>
             <li><a href="#" class="link-block footer__text">Mentions légales</a></li>
-            <li><a href="mailto:xxx@yz.org" class="link-block footer__text">Contact</a></li>
+            <li><a href="mailto:contact@ohmyfood.org" class="link-block footer__text">Contact</a></li>
         </ul>
 
     </footer>
