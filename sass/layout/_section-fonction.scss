@@ -5,7 +5,7 @@
         &__container {
             display: flex;
             flex-direction: column;
-            padding: 56px 20px 0 30px;
+            padding: 56px 20px 59px 30px;
         }
         &__head-title {
             @include head-title-basic-marge;
@@ -16,10 +16,14 @@
             text-align: left;
             min-width: 191px;
             flex-basis: 60%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
         &__item {
             @include item;
             @include shadow;
+            max-width: 320px;
             font-weight: bold;
             margin-bottom: 23px;
             background-color: $colour-background-lighter;
@@ -63,16 +67,7 @@
             justify-content: center;
             align-items: center;
         }
-        @media (min-width: 576px) and (max-width: 1440px) {
-            max-width: 1440px;
-            &__box-item {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-            }
-            &__item {
-                flex: 30%;
-                margin: 0 7.5px 15px;
-            }
+        @media (min-width: 576px) and (max-width: 991px) {
+            max-width: 991px;
         }
     }

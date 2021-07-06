@@ -3,13 +3,16 @@
             max-width: 576px;
         }
         &__container {
+            min-height: 120px;
             background-color: $colour-background-darker;
-            padding: 0 20px 26px;
+            padding: 28px 20px 26px;
             margin: 0;
         }
-        &__logo {
-            width: 35%;
-            padding: 28px 0 20px;
+        &__title {
+            color: white;
+            font-family: $font-extra;
+            padding-bottom: 20px;
+            font-size: 1.1em;
         }
         &__text {
             color: white;
@@ -20,9 +23,6 @@
         }
         @media (min-width: $screen-sm) and (max-width: 991.98px) {
             max-width: 991px;
-            &__logo {
-                max-width: 120px;
-            }
         }
         @media (min-width: 992px) and (max-width: 1440px) {
             max-width: 1440px;
@@ -31,8 +31,8 @@
                 justify-content: space-between;
                 align-items: center;
             }
-            &__logo {
-                width: 120px;
+            &__title {
+                padding-bottom: 0;
             }
         }
     }
