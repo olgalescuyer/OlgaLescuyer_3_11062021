@@ -520,6 +520,187 @@ button {
   transition: all 2000ms ease-in-out;
 }
 
+.load {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Shrikhand";
+  color: white;
+  font-size: 2em;
+}
+.load__container {
+  background-color: #353535;
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 40vh;
+}
+.load__unit {
+  cursor: pointer;
+  animation: clip 2200ms backwards infinite ease-in-out alternate;
+}
+.load__unit--1 {
+  animation-delay: 200ms;
+}
+.load__unit--1:hover {
+  animation-play-state: paused;
+}
+.load__unit--1-inv {
+  animation-delay: 200ms;
+  animation-direction: alternate-reverse;
+  color: #9356dc;
+}
+.load__unit--1-inv:hover {
+  animation-play-state: paused;
+}
+.load__unit--2 {
+  animation-delay: 400ms;
+}
+.load__unit--2:hover {
+  animation-play-state: paused;
+}
+.load__unit--2-inv {
+  animation-delay: 400ms;
+  animation-direction: alternate-reverse;
+  color: #9356dc;
+}
+.load__unit--2-inv:hover {
+  animation-play-state: paused;
+}
+.load__unit--3 {
+  animation-delay: 600ms;
+}
+.load__unit--3:hover {
+  animation-play-state: paused;
+}
+.load__unit--3-inv {
+  animation-delay: 600ms;
+  animation-direction: alternate-reverse;
+  color: #9356dc;
+}
+.load__unit--3-inv:hover {
+  animation-play-state: paused;
+}
+.load__unit--4 {
+  animation-delay: 800ms;
+}
+.load__unit--4:hover {
+  animation-play-state: paused;
+}
+.load__unit--4-inv {
+  animation-delay: 800ms;
+  animation-direction: alternate-reverse;
+  color: #9356dc;
+}
+.load__unit--4-inv:hover {
+  animation-play-state: paused;
+}
+.load__unit--5 {
+  animation-delay: 1000ms;
+}
+.load__unit--5:hover {
+  animation-play-state: paused;
+}
+.load__unit--5-inv {
+  animation-delay: 1000ms;
+  animation-direction: alternate-reverse;
+  color: #9356dc;
+}
+.load__unit--5-inv:hover {
+  animation-play-state: paused;
+}
+.load__unit--6 {
+  animation-delay: 1200ms;
+}
+.load__unit--6:hover {
+  animation-play-state: paused;
+}
+.load__unit--6-inv {
+  animation-delay: 1200ms;
+  animation-direction: alternate-reverse;
+  color: #9356dc;
+}
+.load__unit--6-inv:hover {
+  animation-play-state: paused;
+}
+.load__unit--7 {
+  animation-delay: 1400ms;
+}
+.load__unit--7:hover {
+  animation-play-state: paused;
+}
+.load__unit--7-inv {
+  animation-delay: 1400ms;
+  animation-direction: alternate-reverse;
+  color: #9356dc;
+}
+.load__unit--7-inv:hover {
+  animation-play-state: paused;
+}
+.load__unit--8 {
+  animation-delay: 1600ms;
+}
+.load__unit--8:hover {
+  animation-play-state: paused;
+}
+.load__unit--8-inv {
+  animation-delay: 1600ms;
+  animation-direction: alternate-reverse;
+  color: #9356dc;
+}
+.load__unit--8-inv:hover {
+  animation-play-state: paused;
+}
+.load__unit--9 {
+  animation-delay: 1800ms;
+}
+.load__unit--9:hover {
+  animation-play-state: paused;
+}
+.load__unit--9-inv {
+  animation-delay: 1800ms;
+  animation-direction: alternate-reverse;
+  color: #9356dc;
+}
+.load__unit--9-inv:hover {
+  animation-play-state: paused;
+}
+.load__unit--10 {
+  animation-delay: 2000ms;
+}
+.load__unit--10:hover {
+  animation-play-state: paused;
+}
+.load__unit--10-inv {
+  animation-delay: 2000ms;
+  animation-direction: alternate-reverse;
+  color: #9356dc;
+}
+.load__unit--10-inv:hover {
+  animation-play-state: paused;
+}
+.load__unit--11 {
+  animation-delay: 2200ms;
+}
+.load__unit--11:hover {
+  animation-play-state: paused;
+}
+.load__unit--11-inv {
+  animation-delay: 2200ms;
+  animation-direction: alternate-reverse;
+  color: #9356dc;
+}
+.load__unit--11-inv:hover {
+  animation-play-state: paused;
+}
+
+@keyframes clip {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .btn-form {
   display: flex;
   justify-content: space-around;
