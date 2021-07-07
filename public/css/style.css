@@ -60,6 +60,10 @@ button {
   }
 }
 
+.wrapper {
+  position: relative;
+}
+
 .link-block {
   display: block;
 }
@@ -538,6 +542,11 @@ button {
   min-height: 100vh;
   width: 100%;
   padding-top: 40vh;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  z-index: -9999;
+  animation: preload 2000ms;
 }
 .load__icon_colour {
   color: #99E2D0;
@@ -707,6 +716,20 @@ button {
   }
   100% {
     transform: scale(1);
+  }
+}
+@keyframes preload {
+  0% {
+    opacity: 1;
+    z-index: 1;
+  }
+  99% {
+    opacity: 1;
+    z-index: 1;
+  }
+  100% {
+    opacity: 1;
+    z-index: -9999;
   }
 }
 .btn-form {

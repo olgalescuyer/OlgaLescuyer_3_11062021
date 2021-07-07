@@ -4,6 +4,11 @@
         min-height: 100vh;
         width: 100%;
         padding-top: 40vh;
+        position: absolute;
+        top: 0;
+        opacity: 0;
+        z-index: -9999;
+        animation: preload 2000ms;
     }
     &__icon {
         &_colour {
@@ -44,5 +49,20 @@
     }
     100% {
         transform: scale(1.0);
+    }
+}
+
+@keyframes preload {
+    0% {
+        opacity: 1;
+        z-index: 1;
+    }
+    99% {
+        opacity: 1;
+        z-index: 1;
+    }
+    100% {
+        opacity: 1;
+        z-index: -9999;
     }
 }
