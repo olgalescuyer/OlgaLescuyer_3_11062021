@@ -398,10 +398,10 @@ button {
 .menu-list__price {
   position: relative;
   left: 50px;
-  transition: transform 1s;
+  transition: transform 1000ms;
 }
 .menu-list__box-item:hover ~ .line {
-  animation: 3s infinite alternate line;
+  animation: 3000ms infinite alternate line;
 }
 .menu-list__item {
   border-radius: 20px;

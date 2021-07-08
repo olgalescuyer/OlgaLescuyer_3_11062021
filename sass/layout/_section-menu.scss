@@ -60,12 +60,12 @@
             &__price {
                 position: relative;
                 left: 50px;
-                transition: transform 1s;
+                transition: transform $anim-dur;
             }
             &__box-item {
                 &:hover {
                     &~.line {
-                        animation: 3s infinite alternate line;
+                        animation: $anim-dur*3 infinite alternate line;
                     }
                 }
             }
