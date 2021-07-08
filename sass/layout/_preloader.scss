@@ -1,14 +1,14 @@
 .load {
     &__container {
         background-color: $colour-background-darker;
-        min-height: 100vh;
+        height: 100%;
         width: 100%;
-        padding-top: 40vh;
+        padding-top: 30vh;
         position: absolute;
         top: 0;
-        opacity: 0;
+        opacity: 1;
         z-index: -9999;
-        animation: preload 2000ms;
+        animation: preload $anim-dur*3;
     }
     &__icon {
         &_colour {
@@ -56,13 +56,18 @@
     0% {
         opacity: 1;
         z-index: 1;
+        clip-path: circle(100%);
+    }
+    80% {
+        opacity: 1;
+        clip-path: circle(100%);
     }
     99% {
-        opacity: 1;
         z-index: 1;
     }
     100% {
-        opacity: 1;
+        opacity: 0;
+        clip-path: circle(0%);
         z-index: -9999;
     }
 }

@@ -1,13 +1,12 @@
 .search {
-    @media (min-width: $screen-xs) {
-        max-width: 576px;
-    }
     &__container {
         background-color: $colour-background-lighter;
-        margin-top: 84px;
     }
     &__box {
         padding: 45px 20px 55px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     &__title {
         padding: 0 24px 27px;
@@ -20,19 +19,5 @@
         padding-bottom: 40px;
         display: flex;
         flex-direction: column;
-    }
-    @media (min-width: $screen-sm) and (max-width: 1440px) {
-        max-width: 1440px;
-        &__btn-form {
-            min-width: 400px;
-        }
-        &__box {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        &__container {
-            margin-top: 0;
-        }
     }
 }
