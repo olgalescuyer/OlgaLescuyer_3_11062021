@@ -335,30 +335,6 @@ button {
 .menu {
   background-color: #f6f6f6;
 }
-@media (min-width: 0) {
-  .menu {
-    max-width: 576px;
-  }
-}
-@media (min-width: 576px) and (max-width: 991px) {
-  .menu {
-    max-width: 991px;
-  }
-}
-@media (min-width: 992px) and (max-width: 1440px) {
-  .menu {
-    max-width: 1440px;
-  }
-  .menu__box-list {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-  .menu .menu-list {
-    padding: 0 10px;
-    width: 33%;
-  }
-}
 .menu__image {
   min-height: 350px;
   display: flex;
@@ -381,6 +357,31 @@ button {
 }
 .menu__btn-form {
   padding: 37px 0 58px;
+}
+@media (min-width: 992px) {
+  .menu {
+    max-width: 1200px;
+  }
+  .menu__box-list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .menu .menu-list {
+    padding: 0 10px;
+    width: 33%;
+  }
+}
+@media (min-width: 1200px) {
+  .menu {
+    max-width: 2700px;
+  }
+  .menu__box-list {
+    padding: 0 30px;
+  }
+  .menu__heading {
+    padding: 30px 40px 5px;
+  }
 }
 
 .menu-list__subtitle {
@@ -413,8 +414,11 @@ button {
   padding: 0 0 0 11px;
   margin: 15px 0;
   background-color: white;
-  transition: transform;
-  transform-origin: top;
+  transition: transform 1000ms;
+  animation: item-mv 1000ms ease-in-out;
+}
+.menu-list__item:hover {
+  transform: scale(1.01);
 }
 .menu-list__item:hover > .btn-checked {
   transform: translateX(-50px);
@@ -427,36 +431,22 @@ button {
   transform: translateX(-55px);
 }
 .menu-list__item_1 {
-  transition: transform;
-  transform-origin: top;
-  animation-name: item-mv;
-  animation-duration: 1000ms;
-  animation-delay: 200ms;
-  animation-timing-function: ease-in-out;
+  animation-delay: 90.9090909091ms;
 }
 .menu-list__item_2 {
-  animation-name: item-mv;
-  animation-duration: 1000ms;
-  animation-delay: 400ms;
-  animation-timing-function: ease-in-out;
+  animation-delay: 181.8181818182ms;
 }
 .menu-list__item_3 {
-  animation-name: item-mv;
-  animation-duration: 1000ms;
-  animation-delay: 600ms;
-  animation-timing-function: ease-in-out;
+  animation-delay: 272.7272727273ms;
 }
 .menu-list__item_4 {
-  animation-name: item-mv;
-  animation-duration: 1000ms;
-  animation-delay: 800ms;
-  animation-timing-function: ease-in-out;
+  animation-delay: 363.6363636364ms;
 }
 
 @keyframes item-mv {
   0% {
     opacity: 0;
-    transform: translateY(-40px);
+    transform: translateY(-100px);
   }
   17% {
     opacity: 0.2;
@@ -473,24 +463,6 @@ button {
     transform: translateY(0px);
   }
 }
-.btn-checked {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  position: relative;
-  left: 50px;
-  min-height: 68px;
-  width: 60px;
-  background-color: #99E2D0;
-  transition: all 1000ms;
-  opacity: 0;
-}
-.btn-checked__icon {
-  color: white;
-  font-size: 1.2em;
-  transition: all 2000ms ease-in-out;
-}
-
 .load {
   display: flex;
   align-items: center;
@@ -508,23 +480,23 @@ button {
   top: 0;
   opacity: 1;
   z-index: -9999;
-  animation: preload 3300ms;
+  animation: preload 3000ms;
 }
 .load__icon_colour {
   color: #99E2D0;
 }
 .load__unit {
   cursor: pointer;
-  animation: clip 1100ms backwards infinite ease-in-out alternate;
+  animation: clip 1000ms backwards infinite ease-in-out alternate;
 }
 .load__unit--1 {
-  animation-delay: 100ms;
+  animation-delay: 90.9090909091ms;
 }
 .load__unit--1:hover {
   animation-play-state: paused;
 }
 .load__unit--1-inv {
-  animation-delay: 100ms;
+  animation-delay: 90.9090909091ms;
   animation-direction: alternate-reverse;
   color: #9356dc;
 }
@@ -532,13 +504,13 @@ button {
   animation-play-state: paused;
 }
 .load__unit--2 {
-  animation-delay: 200ms;
+  animation-delay: 181.8181818182ms;
 }
 .load__unit--2:hover {
   animation-play-state: paused;
 }
 .load__unit--2-inv {
-  animation-delay: 200ms;
+  animation-delay: 181.8181818182ms;
   animation-direction: alternate-reverse;
   color: #9356dc;
 }
@@ -546,13 +518,13 @@ button {
   animation-play-state: paused;
 }
 .load__unit--3 {
-  animation-delay: 300ms;
+  animation-delay: 272.7272727273ms;
 }
 .load__unit--3:hover {
   animation-play-state: paused;
 }
 .load__unit--3-inv {
-  animation-delay: 300ms;
+  animation-delay: 272.7272727273ms;
   animation-direction: alternate-reverse;
   color: #9356dc;
 }
@@ -560,13 +532,13 @@ button {
   animation-play-state: paused;
 }
 .load__unit--4 {
-  animation-delay: 400ms;
+  animation-delay: 363.6363636364ms;
 }
 .load__unit--4:hover {
   animation-play-state: paused;
 }
 .load__unit--4-inv {
-  animation-delay: 400ms;
+  animation-delay: 363.6363636364ms;
   animation-direction: alternate-reverse;
   color: #9356dc;
 }
@@ -574,13 +546,13 @@ button {
   animation-play-state: paused;
 }
 .load__unit--5 {
-  animation-delay: 500ms;
+  animation-delay: 454.5454545455ms;
 }
 .load__unit--5:hover {
   animation-play-state: paused;
 }
 .load__unit--5-inv {
-  animation-delay: 500ms;
+  animation-delay: 454.5454545455ms;
   animation-direction: alternate-reverse;
   color: #9356dc;
 }
@@ -588,13 +560,13 @@ button {
   animation-play-state: paused;
 }
 .load__unit--6 {
-  animation-delay: 600ms;
+  animation-delay: 545.4545454545ms;
 }
 .load__unit--6:hover {
   animation-play-state: paused;
 }
 .load__unit--6-inv {
-  animation-delay: 600ms;
+  animation-delay: 545.4545454545ms;
   animation-direction: alternate-reverse;
   color: #9356dc;
 }
@@ -602,13 +574,13 @@ button {
   animation-play-state: paused;
 }
 .load__unit--7 {
-  animation-delay: 700ms;
+  animation-delay: 636.3636363636ms;
 }
 .load__unit--7:hover {
   animation-play-state: paused;
 }
 .load__unit--7-inv {
-  animation-delay: 700ms;
+  animation-delay: 636.3636363636ms;
   animation-direction: alternate-reverse;
   color: #9356dc;
 }
@@ -616,13 +588,13 @@ button {
   animation-play-state: paused;
 }
 .load__unit--8 {
-  animation-delay: 800ms;
+  animation-delay: 727.2727272727ms;
 }
 .load__unit--8:hover {
   animation-play-state: paused;
 }
 .load__unit--8-inv {
-  animation-delay: 800ms;
+  animation-delay: 727.2727272727ms;
   animation-direction: alternate-reverse;
   color: #9356dc;
 }
@@ -630,13 +602,13 @@ button {
   animation-play-state: paused;
 }
 .load__unit--9 {
-  animation-delay: 900ms;
+  animation-delay: 818.1818181818ms;
 }
 .load__unit--9:hover {
   animation-play-state: paused;
 }
 .load__unit--9-inv {
-  animation-delay: 900ms;
+  animation-delay: 818.1818181818ms;
   animation-direction: alternate-reverse;
   color: #9356dc;
 }
@@ -644,13 +616,13 @@ button {
   animation-play-state: paused;
 }
 .load__unit--10 {
-  animation-delay: 1000ms;
+  animation-delay: 909.0909090909ms;
 }
 .load__unit--10:hover {
   animation-play-state: paused;
 }
 .load__unit--10-inv {
-  animation-delay: 1000ms;
+  animation-delay: 909.0909090909ms;
   animation-direction: alternate-reverse;
   color: #9356dc;
 }
@@ -658,13 +630,13 @@ button {
   animation-play-state: paused;
 }
 .load__unit--11 {
-  animation-delay: 1100ms;
+  animation-delay: 1000ms;
 }
 .load__unit--11:hover {
   animation-play-state: paused;
 }
 .load__unit--11-inv {
-  animation-delay: 1100ms;
+  animation-delay: 1000ms;
   animation-direction: alternate-reverse;
   color: #9356dc;
 }
@@ -760,6 +732,24 @@ button {
 }
 .btn__text {
   font-size: 0.9em;
+}
+
+.btn-checked {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  left: 50px;
+  min-height: 68px;
+  width: 60px;
+  background-color: #99E2D0;
+  transition: all 1000ms;
+  opacity: 0;
+}
+.btn-checked__icon {
+  color: white;
+  font-size: 1.2em;
+  transition: all 2000ms ease-in-out;
 }
 
 .line {
