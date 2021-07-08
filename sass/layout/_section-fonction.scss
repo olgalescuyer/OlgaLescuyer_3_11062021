@@ -64,14 +64,14 @@
             justify-content: center;
             align-items: center;
         }
-        @media (min-width: $screen-xs) and (max-width: 991px) {
-            max-width: 991px;
+        @media (min-width: $screen-xs) and (max-width: $screen-lg) {
+            max-width: $screen-lg;
             &__container {
                 max-width: 576px;
                 margin: 0 auto;
             }
         }
-        @media (min-width: 992px) {
+        @media (min-width: $screen-lg) {
             &__container {
                 max-width: 1440px;
                 margin: 0 auto;
