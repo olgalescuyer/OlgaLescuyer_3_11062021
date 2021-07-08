@@ -1,21 +1,5 @@
     .fonction {
         background-color: white;
-        @media (min-width: $screen-xs) and (max-width: 991px) {
-            max-width: 991px;
-            &__container {
-                max-width: 576px;
-                margin: 0 auto;
-            }
-        }
-        @media (min-width: 992px) and (max-width: 1440px) {
-            max-width: 1440px;
-            &__box-item {
-                display: flex;
-            }
-            &__item {
-                margin-right: 20px;
-            }
-        }
         &__container {
             display: flex;
             flex-direction: column;
@@ -50,7 +34,7 @@
                 &::after {
                     opacity: 1;
                 }
-                &>.fonction__icon {
+                &>.fonction__icon_colour {
                     color: $colour-primary;
                 }
             }
@@ -63,7 +47,9 @@
             }
         }
         &__icon {
-            color: $colour-shadow-darker;
+            &_colour {
+                color: $colour-shadow-darker;
+            }
         }
         &__circle {
             background-color: $colour-primary;
@@ -77,5 +63,26 @@
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+        @media (min-width: $screen-xs) and (max-width: $screen-lg) {
+            max-width: $screen-lg;
+            &__container {
+                max-width: 576px;
+                margin: 0 auto;
+            }
+        }
+        @media (min-width: $screen-lg) {
+            &__container {
+                max-width: 1440px;
+                margin: 0 auto;
+            }
+            &__box-item {
+                display: flex;
+            }
+            &__item {
+                margin-right: 5%;
+                flex: 30%;
+                max-width: 400px;
+            }
         }
     }

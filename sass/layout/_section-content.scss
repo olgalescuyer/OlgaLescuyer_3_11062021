@@ -1,29 +1,4 @@
 .content {
-    @media (min-width: $screen-xs) {
-        max-width: 576px;
-    }
-    @media (min-width: $screen-sm) and (max-width: 1440px) {
-        max-width: 1440px;
-        &__container {
-            padding: 56px 20px 65px;
-        }
-        &__block {
-            margin: 15px 20px;
-        }
-        &__block-image {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-        }
-        &__block-left {
-            display: flex;
-            justify-content: space-between;
-        }
-        &__block-right {
-            display: flex;
-            justify-content: space-between;
-        }
-    }
     &__container {
         padding: 56px 20px 65px;
         background-color: $colour-background-lighter;
@@ -56,5 +31,50 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    @media (min-width: $screen-sm) and (max-width: 1440px) {
+        max-width: 1440px;
+        &__container {
+            padding: 56px 20px 65px;
+        }
+        &__block {
+            margin: 15px 20px;
+        }
+        &__block-image {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        &__block-left {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__block-right {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    @media (min-width: 1441px) {
+        max-width: 2700px;
+        margin: 0 auto;
+        &__container {
+            padding: 56px 30px 65px;
+        }
+        &__block {
+            margin: 0 30px;
+        }
+        &__block-image {
+            display: flex;
+        }
+        &__block-left {
+            display: flex;
+            flex-direction: row;
+            width: 50%;
+        }
+        &__block-right {
+            display: flex;
+            flex-direction: row;
+            width: 50%;
+        }
     }
 }
