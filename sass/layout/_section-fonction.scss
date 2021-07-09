@@ -27,7 +27,7 @@
             align-items: center;
             position: relative;
             z-index: 1;
-            transition: transform 800ms ease-in-out;
+            transition: transform $anim-dur*.8 ease-in-out;
             &:hover {
                 transform: scale(.99);
                 cursor: pointer;
@@ -42,7 +42,7 @@
                 @include after;
                 border-radius: 20px;
                 background: radial-gradient(ellipse, lighten($colour-background-lighter, 5) 0%, darken(#f5edff, 10) 100%);
-                transition: opacity 1000ms;
+                transition: opacity $anim-dur;
                 opacity: 0;
             }
         }
