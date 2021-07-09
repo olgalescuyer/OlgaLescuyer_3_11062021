@@ -26,6 +26,11 @@
         }
         &_full {
             color: $colour-secondary;
+            background: $colour-secondary;
+            background: linear-gradient(63deg, $colour-secondary 0%, $colour-primary 100%);
+            background-clip: border-box;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
             opacity: 0;
             transition: all $anim-dur;
             transform: scale(0);
