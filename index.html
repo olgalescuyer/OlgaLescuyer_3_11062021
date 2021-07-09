@@ -10,12 +10,13 @@
     <title>OhMyFood</title>
 </head>
 <!--paradigme : la méthodologie Block __Element _Modifier -->
-<!--resposive : mix = 'élastque'(les valeurs des éléments sont relatives au max) + @media queries-->
-<!--dans SASS je me suis basée sur le principe "7-1"-->
+<!--conception de resposive se base sur le mix = 'élastque'(les valeurs des éléments sont relatives au max) + @media queries-->
+<!--dans SASS je suis le principe "7-1"-->
 
 <!--site contient 5 pages : 
     index + 4 pages des restaurants
 -->
+
 <!--structure html (layouts principales que vous trouverez dans 'layout' de SASS; "champs" de travail :) ):
 
     _header
@@ -135,12 +136,12 @@
                             <a href="la-palette-du-gout.html" class="link-block content__block">
 
                                 <div class="image-1 content__element">
-                                    <!--je m'appelle Polariod, je consiste en 3 composants : 1)'sticker' + 2)'image' = sont indépandants, 3) mon propre élément 'text'-->
+                                    <!--je suis Polariod, je consiste en 3 composants : 1)'sticker' + 2)'image' = sont indépandants, 3) mon propre élément 'text'-->
 
                                     <p class="sticker sticker_green">Nouveau</p>
 
                                     <div class="content__text-element">
-                                        <p><b>La palette du goût</b><br/>Ménilmontant</p><span class="fa-heart__box"><i class="fas fa-heart fa-heart_full"></i><i class="far fa-heart fa-heart_empty"></i></span>
+                                        <p><b>La palette du goût</b><br/>Ménilmontant</p><span class="fa-heart__box fa-heart__content"><i class="fas fa-heart  fa-heart_full"></i><i class="far fa-heart fa-heart__content_empty"></i></span>
                                     </div>
 
                                 </div>
@@ -153,7 +154,7 @@
                                     <p class="sticker sticker_green">Nouveau</p>
 
                                     <div class="content__text-element">
-                                        <p><b>La note enchantée</b><br/>Charonne</p><span class="fa-heart__box"><i class="fas fa-heart fa-heart_full"></i><i class="far fa-heart fa-heart_empty"></i></span>
+                                        <p><b>La note enchantée</b><br/>Charonne</p><span class="fa-heart__box fa-heart__content"><i class="fas fa-heart fa-heart_full"></i><i class="far fa-heart fa-heart__content_empty"></i></span>
                                     </div>
 
                                 </div>
@@ -170,7 +171,7 @@
                                     <!--ici le 'sticker' est trasparant car je prévois son utilisation à l'avenir pour les 'promo' par exemple, il suffit de modifier son modificateur dans le css-->
 
                                     <div class="content__text-element">
-                                        <p><b>A la française</b><br/>Cité Rouge</p><span class="fa-heart__box"><i class="fas fa-heart fa-heart_full"></i><i class="far fa-heart fa-heart_empty"></i></span>
+                                        <p><b>A la française</b><br/>Cité Rouge</p><span class="fa-heart__box fa-heart__content"><i class="fas fa-heart fa-heart_full"></i><i class="far fa-heart fa-heart__content_empty"></i></span>
                                     </div>
 
                                 </div>
@@ -184,7 +185,7 @@
                                     <!--ici le 'sticker' est trasparant car je prévois son utilisation à l'avenir pour les 'promo' par exemple, il suffit de modifier son modificateur dans le css-->
 
                                     <div class="content__text-element">
-                                        <p><b>Le delice des sens</b><br/>Folie-Méricourt</p><span class="fa-heart__box"><i class="fas fa-heart fa-heart_full"></i><i class="far fa-heart fa-heart_empty"></i></span>
+                                        <p><b>Le delice des sens</b><br/>Folie-Méricourt</p><span class="fa-heart__box fa-heart__content"><i class="fas fa-heart fa-heart_full"></i><i class="far fa-heart fa-heart__content_empty"></i></span>
                                     </div>
 
                                 </div>

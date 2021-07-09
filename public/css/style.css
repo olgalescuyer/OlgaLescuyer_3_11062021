@@ -45,7 +45,7 @@ button {
   flex-direction: column;
   overflow: hidden;
 }
-@media (min-width: 576px) and (max-width: 991.98px) {
+@media (min-width: 576px) and (max-width: 992px) {
   .main-wrapper {
     max-width: 991px;
   }
@@ -249,9 +249,11 @@ button {
   }
 }
 
+.content {
+  background-color: #f6f6f6;
+}
 .content__container {
   padding: 56px 20px 65px;
-  background-color: #f6f6f6;
 }
 .content__head-title {
   padding: 0 0 27px;
@@ -307,12 +309,10 @@ button {
   }
 }
 @media (min-width: 1441px) {
-  .content {
-    max-width: 2700px;
-    margin: 0 auto;
-  }
   .content__container {
     padding: 56px 30px 65px;
+    max-width: 2700px;
+    margin: 0 auto;
   }
   .content__block {
     margin: 0 30px;
@@ -677,8 +677,21 @@ button {
 }
 
 .fa-heart {
-  font-size: 1.4em;
   cursor: pointer;
+}
+.fa-heart__content {
+  font-size: 1.4em;
+}
+.fa-heart__content_empty {
+  position: relative;
+  right: 22px;
+}
+.fa-heart__menu {
+  font-size: 1.2em;
+}
+.fa-heart__menu_empty {
+  position: relative;
+  right: 23px;
 }
 .fa-heart__box {
   position: relative;
@@ -694,10 +707,6 @@ button {
   transition: all 1000ms;
   transform: scale(0);
   transform-origin: bottom;
-}
-.fa-heart_empty {
-  position: relative;
-  right: 22px;
 }
 
 .fa-mobile-alt {

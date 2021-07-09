@@ -1,7 +1,7 @@
 .content {
+    background-color: $colour-background-lighter;
     &__container {
         padding: 56px 20px 65px;
-        background-color: $colour-background-lighter;
     }
     &__head-title {
         @include head-title-basic-marge
@@ -55,10 +55,10 @@
         }
     }
     @media (min-width: 1441px) {
-        max-width: 2700px;
-        margin: 0 auto;
         &__container {
             padding: 56px 30px 65px;
+            max-width: 2700px;
+            margin: 0 auto;
         }
         &__block {
             margin: 0 30px;
