@@ -680,6 +680,25 @@ button {
   font-size: 1.4em;
   cursor: pointer;
 }
+.fa-heart__box {
+  position: relative;
+  left: 21px;
+}
+.fa-heart__box:hover > .fa-heart_full {
+  opacity: 1;
+  transform: scale(1);
+}
+.fa-heart_full {
+  color: #ff79da;
+  opacity: 0;
+  transition: all 1000ms;
+  transform: scale(0);
+  transform-origin: bottom;
+}
+.fa-heart_empty {
+  position: relative;
+  right: 22px;
+}
 
 .fa-mobile-alt {
   font-size: 1.2em;
