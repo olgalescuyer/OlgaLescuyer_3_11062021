@@ -26,8 +26,8 @@
         }
         &_full {
             color: $colour-secondary;
-            background: rgb(255, 121, 218);
-            background: linear-gradient(63deg, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 100%);
+            background: $colour-secondary;
+            background: linear-gradient(63deg, $colour-secondary 0%, $colour-primary 100%);
             background-clip: border-box;
             -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;
