@@ -1,8 +1,38 @@
-.fa-heart {
-    font-size: 1.4em;
-    cursor: pointer;
-}
-
-.fa-mobile-alt {
-    font-size: 1.2em;
-}
+    .fa-heart {
+        cursor: pointer;
+        &__content {
+            font-size: 1.4em;
+            &_empty {
+                position: relative;
+                right: 22px;
+            }
+        }
+        &__menu {
+            font-size: 1.2em;
+            &_empty {
+                position: relative;
+                right: 23px;
+            }
+        }
+        &__box {
+            position: relative;
+            left: 21px;
+            &:hover {
+                &>.fa-heart_full {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+        }
+        &_full {
+            color: $colour-secondary;
+            opacity: 0;
+            transition: all $anim-dur;
+            transform: scale(0);
+            transform-origin: bottom;
+        }
+    }
+    
+    .fa-mobile-alt {
+        font-size: 1.2em;
+    }
