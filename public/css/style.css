@@ -39,6 +39,7 @@ button {
 }
 
 .main-wrapper {
+  background-color: #f6f6f6;
   min-height: 100%;
   width: 100%;
   display: flex;
@@ -334,6 +335,7 @@ button {
 
 .menu {
   background-color: #f6f6f6;
+  margin: 0 auto;
 }
 .menu__image {
   min-height: 350px;
