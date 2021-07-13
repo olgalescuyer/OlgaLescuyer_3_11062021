@@ -11,6 +11,7 @@ button {
 }
 
 .main-wrapper {
+    background-color: $colour-background-lighter;
     @media (min-width: $screen-sm) and (max-width: $screen-lg) {
         max-width: 991px;
     }
