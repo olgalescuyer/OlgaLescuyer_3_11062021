@@ -798,7 +798,7 @@ button {
 .btn-checked__icon {
   color: white;
   font-size: 1.2em;
-  transition: all 2000ms ease-in-out;
+  transition: all 666.6666666667ms ease-in-out;
 }
 
 .line {
