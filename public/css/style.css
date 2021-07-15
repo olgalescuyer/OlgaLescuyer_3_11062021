@@ -392,14 +392,12 @@ button {
 .menu-list__text-item {
   line-height: 1.5em;
   font-size: 0.9em;
-  flex: 40%;
+  flex: 80%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .menu-list__price {
-  position: relative;
-  left: 50px;
   transition: transform 1000ms;
 }
 .menu-list__box-item:hover ~ .line {
@@ -410,11 +408,12 @@ button {
   min-height: 68px;
   cursor: pointer;
   box-shadow: 10px 10px 29px -5px gray;
+  max-width: 475px;
   overflow: hidden;
   display: flex;
   align-items: center;
   padding-left: 11px;
-  margin: 15px 0;
+  margin: 15px auto;
   background-color: white;
   transition: transform 1000ms;
   animation: item-mv 1000ms ease-in-out;
@@ -423,14 +422,14 @@ button {
   transform: scale(1.01);
 }
 .menu-list__item:hover > .btn-checked {
-  transform: translateX(-50px);
+  transform: translateX(0px);
   opacity: 1;
 }
 .menu-list__item:hover > .btn-checked > .btn-checked__icon {
   transform: rotate(360deg);
 }
-.menu-list__item:hover > .menu-list__price {
-  transform: translateX(-55px);
+.menu-list__item:hover > .menu-list__text-item {
+  flex: 30%;
 }
 .menu-list__item_1 {
   animation-delay: 90.9090909091ms;
@@ -786,13 +785,13 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  position: relative;
-  left: 50px;
+  transform: translateX(20px);
   min-height: 68px;
-  width: 60px;
+  max-width: 60px;
   background-color: #99E2D0;
   transition: all 1000ms;
   opacity: 0;
+  flex: 1%;
 }
 .btn-checked__icon {
   color: white;

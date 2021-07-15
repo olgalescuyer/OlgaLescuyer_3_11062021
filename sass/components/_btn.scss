@@ -32,13 +32,13 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    position: relative;
-    left: 50px;
+    transform: translateX(20px);
     min-height: 68px;
-    width: 60px;
+    max-width: 60px;
     background-color: $colour-tertiary;
     transition: all $anim-dur;
     opacity: 0;
+    flex: 1%;
     &__icon {
         color: white;
         font-size: 1.2em;
