@@ -53,14 +53,12 @@
             &__text-item {
                 line-height: 1.5em;
                 font-size: .9em;
-                flex: 40%;
+                flex: 80%;
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
             }
             &__price {
-                position: relative;
-                left: 50px;
                 transition: transform $anim-dur;
             }
             &__box-item {
@@ -73,25 +71,26 @@
             &__item {
                 @include item;
                 @include shadow;
+                max-width: 475px;
                 overflow: hidden;
                 display: flex;
                 align-items: center;
                 padding-left: 11px;
-                margin: 15px 0;
+                margin: 15px auto;
                 background-color: white;
                 transition: transform $anim-dur;
                 animation: item-mv $anim-dur ease-in-out;
                 &:hover {
                     transform: scale(1.01);
                     &>.btn-checked {
-                        transform: translateX(-50px);
+                        transform: translateX(0px);
                         opacity: 1;
                         &>.btn-checked__icon {
                             transform: rotate(360deg);
                         }
                     }
-                    &>.menu-list__price {
-                        transform: translateX(-55px);
+                    &>.menu-list__text-item {
+                        flex: 30%;
                     }
                 }
                 @for $i from 1 through $num-items {
