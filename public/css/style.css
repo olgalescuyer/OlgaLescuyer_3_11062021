@@ -396,7 +396,6 @@ button {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  background-color: aqua;
 }
 .menu-list__price {
   position: relative;
@@ -414,7 +413,7 @@ button {
   overflow: hidden;
   display: flex;
   align-items: center;
-  padding: 0 0 0 11px;
+  padding-left: 11px;
   margin: 15px 0;
   background-color: white;
   transition: transform 1000ms;
