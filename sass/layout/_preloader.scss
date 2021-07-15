@@ -5,12 +5,11 @@
         width: 100%;
         padding-top: 20%;
         position: fixed;
-        overflow: show;
         top: 0;
         opacity: 1;
         z-index: -9999;
         animation: preload $anim-dur*3;
-         :before {
+        &:before {
             content: '';
             display: block;
             position: fixed;
@@ -22,6 +21,7 @@
         }
     }
     &__icon {
+        color: $colour-tertiary;
         &_colour {
             color: $colour-tertiary;
         }
