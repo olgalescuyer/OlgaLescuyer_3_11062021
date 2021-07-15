@@ -4,13 +4,24 @@
         height: 100%;
         width: 100%;
         padding-top: 20%;
-        position: absolute;
+        position: fixed;
         top: 0;
         opacity: 1;
         z-index: -9999;
         animation: preload $anim-dur*3;
+        &:before {
+            content: '';
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.4;
+        }
     }
     &__icon {
+        color: $colour-tertiary;
         &_colour {
             color: $colour-tertiary;
         }
