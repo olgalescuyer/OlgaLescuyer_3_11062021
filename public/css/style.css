@@ -396,6 +396,7 @@ button {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  background-color: aqua;
 }
 .menu-list__price {
   position: relative;
@@ -427,7 +428,7 @@ button {
   opacity: 1;
 }
 .menu-list__item:hover > .btn-checked > .btn-checked__icon {
-  transform: rotate(-360deg);
+  transform: rotate(360deg);
 }
 .menu-list__item:hover > .menu-list__price {
   transform: translateX(-55px);

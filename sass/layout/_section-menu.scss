@@ -57,6 +57,7 @@
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
+                background-color: aqua;
             }
             &__price {
                 position: relative;
@@ -87,7 +88,7 @@
                         transform: translateX(-50px);
                         opacity: 1;
                         &>.btn-checked__icon {
-                            transform: rotate(-360deg);
+                            transform: rotate(360deg);
                         }
                     }
                     &>.menu-list__price {
